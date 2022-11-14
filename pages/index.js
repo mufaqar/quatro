@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Link from 'next/link';
+import Image from 'next/image';
 import HeroSection from '../components/heroSection'
 import ServiceBox from '../components/serviceBox'
 import Code from '../public/images/code.png';
@@ -12,6 +12,11 @@ import Card3 from '../public/images/card3.png';
 import Card4 from '../public/images/card4.png';
 import Card5 from '../public/images/card5.png';
 import Card6 from '../public/images/card6.png';
+import PostBox from '../components/postBox';
+import Blog1 from '../public/images/blog1.png';
+import Blog2 from '../public/images/blog2.png';
+import MblBG from '../public/images/bgMbl.png';
+import Icon1 from '../public/images/icon1.png';
 
 export default function Home() {
   return (
@@ -59,6 +64,55 @@ export default function Home() {
             <Card image_path={Card6} title="PC,모바일 구애없이 언제 어디서나" content="한글/영문 언어지원과 달러/원화 단위변환 등
                   시스템 트레이딩을 위한 최적의 옵션을 제공하며
                   텔레그램을 통해 상세한 주문내역을 받아보세요." />
+          </div>
+        </div>
+      </section>
+
+      <section className='py-16 bg-[#333333]'>
+        <div className='container mx-auto'>
+          <h1 className='md:text-[3.75rem] md:leading-[5.25rem] font-bold -tracking-[1.5px] text-[#F9FAFB] md:text-start text-center'>
+            퀀트투자,<br></br>
+            편리함에 전략을 더해
+          </h1>
+        </div>
+        <div className='container mx-auto grid gap-14 mt-10'>
+          <PostBox image_path={Blog1} title="국내외 최상위 개발진들과 협업하여 분산주문 시스템 구축" content="많은 주문횟수와 성공적인 주문연결을 최우선으로 하며 사용자가 자동매매 서비스를 이용하는데 불편함이 없도록 하고있어요." category="하나" />
+          <PostBox image_path={Blog2} title="암호화된 알고리즘 보관시스템으로 사용자 데이터 보호" content="퀀트로는 사용자의 데이터를 절대적으로 중요하게 생각하며 그 어떠한 위험에도 노출되지 않도록 최선을 다하고 있어요." category="둘" />
+        </div>
+      </section>
+
+      <section className='py-16 bg-[#F9FAFB] relative'>
+        <Image src={MblBG} alt="Image" className='absolute right-0 top-0 max-w-[450px]' />
+        <div className='container mx-auto text-center '>
+          <h3 className='md:text-[3.75rem] md:leading-[5.25rem] font-light -tracking-[1.5px] text-center text-[#171717]'>거래소 통합주문 플랫폼</h3>
+          <h3 className='md:text-[3.75rem] md:leading-[5.25rem] font-bold -tracking-[1.5px] text-center text-[#171717] mb-8'>퀀트로, 간편하게 시작해보세요.</h3>
+          <Link href="#" className='bg-[#F39200] w-fit mx-auto border-2 border-[#F39200] px-5 py-2 rounded-full textWhite md:text-[1.25rem] md:leading-[1.5rem] font-bold'>이용권 등록 바로가기</Link>
+
+        </div>
+        <div className='container mx-auto grid md:grid-cols-3 grid-cols-1 md:gap-14 md:pt-20 z-50'>
+          <div className=''>
+            <Image src={Icon1} alt="Image" className='mx-auto' />
+            <div>
+              <h3 className='md:text-[1.5rem] md:leading-[2.125rem] font-bold -tracking-[1.5px] text-center text-[#171717] mt-10'>자동매매 프로그램 무료 제공</h3>
+              <p className='md:text-[1rem] md:leading-[1.6rem] -tracking-[1.5px] font-medium text-[#606060] text-center mt-5'>전략가들이 검증한 시스템트레이딩 전략을
+                쉽고 간편하게 이용가능</p>
+            </div>
+          </div>
+          <div className=''>
+            <Image src={Icon1} alt="Image" className='mx-auto' />
+            <div>
+              <h3 className='md:text-[1.5rem] md:leading-[2.125rem] font-bold -tracking-[1.5px] text-center text-[#171717] mt-10'>자동매매 프로그램 무료 제공</h3>
+              <p className='md:text-[1rem] md:leading-[1.6rem] -tracking-[1.5px] font-medium text-[#606060] text-center mt-5'>전략가들이 검증한 시스템트레이딩 전략을
+                쉽고 간편하게 이용가능</p>
+            </div>
+          </div>
+          <div className=''>
+            <Image src={Icon1} alt="Image" className='mx-auto' />
+            <div>
+              <h3 className='md:text-[1.5rem] md:leading-[2.125rem] font-bold -tracking-[1.5px] text-center text-[#171717] mt-10'>자동매매 프로그램 무료 제공</h3>
+              <p className='md:text-[1rem] md:leading-[1.6rem] -tracking-[1.5px] font-medium text-[#606060] text-center mt-5'>전략가들이 검증한 시스템트레이딩 전략을
+                쉽고 간편하게 이용가능</p>
+            </div>
           </div>
         </div>
       </section>
