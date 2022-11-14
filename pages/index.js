@@ -5,6 +5,13 @@ import ServiceBox from '../components/serviceBox'
 import Code from '../public/images/code.png';
 import Graph from '../public/images/graph.png';
 import Clock from '../public/images/clock.png';
+import Card from '../components/card';
+import Card1 from '../public/images/card1.png';
+import Card2 from '../public/images/card2.png';
+import Card3 from '../public/images/card3.png';
+import Card4 from '../public/images/card4.png';
+import Card5 from '../public/images/card5.png';
+import Card6 from '../public/images/card6.png';
 
 export default function Home() {
   return (
@@ -17,23 +24,41 @@ export default function Home() {
           <p className='md:text-[3.25rem] md:leading-[3.8rem] font-bold -tracking-[1.5px] text-center text-[#171717]'>퀀트로는 이렇게 낮췄어요.</p>
         </div>
         <div className='container mx-auto grid md:grid-cols-3 grid-cols-1 gap-8 mt-12'>
-          <ServiceBox bgColour="bg-[#A9D2FF]" src_path={Code} title="코딩 걱정 없이" content="자동매매를 하고 싶지만, 코딩이 걱정이라면? 전략 아이디어만 있다면 나만의 전략은 퀀트로에서 실현 시킬 수 있어요." />
-          <ServiceBox bgColour="bg-[#434B61]" src_path={Graph} title="전략 걱정 없이" content="퀀트로가 직접 분석하고 인증한 
+          <ServiceBox bgColour="bg-[#A9D2FF]" image_path={Code} title="코딩 걱정 없이" content="자동매매를 하고 싶지만, 코딩이 걱정이라면? 전략 아이디어만 있다면 나만의 전략은 퀀트로에서 실현 시킬 수 있어요." />
+          <ServiceBox bgColour="bg-[#434B61]" image_path={Graph} title="전략 걱정 없이" content="퀀트로가 직접 분석하고 인증한 
                 상위 퀀트 투자자들의 
                 다양한 전략을 받아보세요."/>
-          <ServiceBox bgColour="bg-[#F8E2A9]" src_path={Clock} title="시간 걱정 없이" content="이제 내가 원하는 타점에서
+          <ServiceBox bgColour="bg-[#F8E2A9]" image_path={Clock} title="시간 걱정 없이" content="이제 내가 원하는 타점에서
                 자동 매매될 수 있도록 시스템에 맡기고
                 소중한 시간을 아끼세요."/>
         </div>
       </section>
 
       <section className='py-14'>
-        <div className='container mx-auto grid md:grid-cols-2 grid-cols-1 gap-8 mt-12'>
-          <div>
+        <div className='container mx-auto grid md:grid-cols-3 grid-cols-1 gap-8 mt-12'>
+          <div className='col-span-2'>
             <h1 className='md:text-[3.75rem] md:leading-[5.25rem] font-bold -tracking-[1.5px] text-[#171717] md:text-start text-center'>
               퀀트투자,<br></br>
               편리함에 전략을 더해
             </h1>
+          </div>
+          <div className='grid gap-8'>
+            <Card image_path={Card1} title="모든 거래소를 한번에 통합관리" content="바이낸스,바이빗,비트겟,업비트 등 
+                  국내외의 다양한 거래소를 통합하여 한곳에서 
+                  주문을 관리할수 있어요." />
+            <Card image_path={Card2} title="누구든지, 쉽게 " content="트레이딩뷰와 연동하여 쉽고 편리하게
+                  자동매매 가능한 프로그램을 제공해요." />
+            <Card image_path={Card3} title="시스템 트레이딩의 소통 놀이터로" content="사용자간의 피드백과 의견을 주고받을 수 있는 
+                  커뮤니티와 사용가능한 무료 시스템 전략을
+                  받아보세요." />
+            <Card image_path={Card4} title="상위 퀀트 투자자들의 전략 분석 제공" content="퀀트로의 인증된 전문 전략가들의
+                  다양한 전략을 볼 수 있어요." />
+            <Card image_path={Card5} title="전문가가 코딩해주는 나만의 전략" content="사용자간의 피드백과 의견을 주고받을 수 있는 
+                  커뮤니티와 퀀트로 이용자라면 사용가능한
+                  무료 시스템 전략을 제공합니다." />
+            <Card image_path={Card6} title="PC,모바일 구애없이 언제 어디서나" content="한글/영문 언어지원과 달러/원화 단위변환 등
+                  시스템 트레이딩을 위한 최적의 옵션을 제공하며
+                  텔레그램을 통해 상세한 주문내역을 받아보세요." />
           </div>
         </div>
       </section>
