@@ -56,7 +56,7 @@ export default function HeroSection() {
         </Link>
         <Link
           href=""
-          className="absolute top-0 right-5 text-[1rem] leading-[1.1rem]"
+          className="fixed top-40 right-5 text-[1rem] leading-[1.1rem]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
