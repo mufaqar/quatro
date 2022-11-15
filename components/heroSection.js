@@ -17,13 +17,13 @@ export default function HeroSection() {
           <div className="mt-12 gap-5 flex md:flex-row flex-col md:px-auto px-6 ">
             <Link
               href="/"
-              className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-[#F39200] hover:bg-transparent w-fit md:mx-0 mx-auto border-2 border-[#F39200] px-5 py-2 rounded-full textWhite md:text-[1.25rem] text-[1rem] md:leading-[1.5rem] font-bold text-white hover:text-[#F39200]"
+              className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-[#F39200] hover:bg-[#E1740F] w-fit md:mx-0 mx-auto border-2 border-[#F39200] hover:border-[#E1740F] px-5 py-2 rounded-full md:text-[1.25rem] text-[1rem] md:leading-[1.5rem] font-bold text-white"
             >
               퀀트로 바로가기
             </Link>
             <Link
               href="mailto:help@quantro.net"
-              className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-transparent hover:bg-[#171717] w-fit md:mx-0 mx-auto border-2 border-black/10 px-5 py-2 rounded-full md:text-[1.25rem] text-[1rem] md:leading-[1.5rem] font-bold text-[#171717] hover:text-white"
+              className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-transparent w-fit md:mx-0 mx-auto border-2 border-black/10 hover:border-black/50 px-5 py-2 rounded-full md:text-[1.25rem] text-[1rem] md:leading-[1.5rem] font-bold text-[#171717] "
             >
               이용안내
             </Link>
