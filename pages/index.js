@@ -149,7 +149,7 @@ export default function Home() {
               <p className='md:text-[1rem] md:leading-[1.18rem] -tracking-[1.5px] font-normal text-[#333333] mt-5 md:block hidden'>어려운 점이 있으신가요?
                 퀀트로 고객센터로 문의주세요.</p>
             </div>
-            <Link href="#" className='md:w-full w-1/2 md:text-[1.25rem] text-[0.875rem] md:leading-[1.43rem] leading-[1rem] font-medium -tracking-[1.5px] text-[#909090] flex items-center gap-3 md:mt-12'>1:1문의 바로가기
+            <Link href="mailto:help@quantro.net" className='md:w-full w-1/2 md:text-[1.25rem] text-[0.875rem] md:leading-[1.43rem] leading-[1rem] font-medium -tracking-[1.5px] text-[#909090] flex items-center gap-3 md:mt-12'>1:1문의 바로가기
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-4 h-4">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
               </svg>
