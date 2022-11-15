@@ -64,7 +64,7 @@ export default function HeroSection() {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="w-16 h-16 bg-white p-4 mb-2 rounded-full "
+            className="w-16 h-16 bg-white p-4 mb-2 rounded-full hover:scale-75 transition ease-in-out delay-150"
           >
             <path
               strokeLinecap="round"

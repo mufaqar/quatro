@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function ServiceBox({ bgColour, image_path, title, content }) {
     return (
-        <div className='bg-white md:rounded-[32px] rounded-[16px] md:py-12 py-6 md:px-11 px-4 flex md:flex-col flex-row gap-3 items-center'>
+        <div className='bg-white md:rounded-[32px] rounded-[16px] md:py-12 py-6 md:px-11 px-4 flex md:flex-col flex-row gap-3 items-center hover:scale-105 transition ease-in-out delay-150'>
             <div className='md:w-auto w-1/3'>
                 <Image src={image_path} alt="Code Image" className={`rounded-full md:p-5 p-2 mx-auto  ${bgColour}`} />
             </div>
