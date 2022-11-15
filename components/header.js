@@ -14,7 +14,7 @@ function Header() {
                 <link rel="shortcut icon" href="../public/icons/favicon.png" />
             </Head>
             <header>
-                <nav className="w-full fixed">
+                <nav className="w-full fixed z-50">
                     <div className="justify-between container mx-auto px-5 md:items-center md:flex">
                         <div>
                             <div className="flex items-center justify-between py-3 md:py-5 md:block">

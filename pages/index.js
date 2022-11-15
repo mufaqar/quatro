@@ -82,68 +82,74 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='py-20 bg-[#F9FAFB] bg-[url(/images/bgMbl.png)] bg-contain bg-no-repeat bg-right'>
+      <section className='py-20 md:px-auto px-6 bg-[#F9FAFB] md:bg-[url(/images/bgMbl.png)] bg-contain bg-no-repeat bg-right'>
         <div className='container mx-auto text-center '>
-          <h3 className='md:text-[3.75rem] md:leading-[5.25rem] font-light -tracking-[1.5px] text-center text-[#171717]'>거래소 통합주문 플랫폼</h3>
-          <h3 className='md:text-[3.75rem] md:leading-[5.25rem] font-bold -tracking-[1.5px] text-center text-[#171717] mb-8'>퀀트로, 간편하게 시작해보세요.</h3>
-          <Link href="#" className='bg-[#F39200] w-fit mx-auto border-2 border-[#F39200] px-5 py-2 rounded-full textWhite md:text-[1.25rem] md:leading-[1.5rem] font-bold'>이용권 등록 바로가기</Link>
+          <h3 className='md:text-[3.75rem] text-[1.5rem] md:leading-[5.25rem] leading-[1.875rem] font-light -tracking-[1.5px] text-center text-[#171717]'>거래소 통합주문 플랫폼</h3>
+          <h3 className='md:text-[3.75rem] text-[1.75rem] md:leading-[5.25rem] leading-[2.1rem] font-bold -tracking-[1.5px] text-center text-[#171717] mt-5 mb-10'>퀀트로, 간편하게 시작해보세요.</h3>
+          <Link href="#" className='bg-[#F39200] text-white w-fit mx-auto border-2 border-[#F39200] px-5 py-2 rounded-full textWhite md:text-[1.25rem] md:leading-[1.5rem] font-bold'>이용권 등록 바로가기</Link>
         </div>
-        <div className='container mx-auto grid md:grid-cols-3 grid-cols-1 md:gap-14 md:pt-20 '>
+        <div className='container mx-auto grid md:grid-cols-3 grid-cols-1 gap-14 md:pt-20 pt-16 '>
           <div className='md:p-8 p-4'>
             <Image src={Icon1} alt="Image" className='mx-auto' />
             <div>
-              <h3 className='md:text-[1.5rem] md:leading-[2.125rem] font-bold -tracking-[1.5px] text-center text-[#171717] mt-10'>자동매매 프로그램 무료 제공</h3>
-              <p className='md:text-[1rem] md:leading-[1.6rem] -tracking-[1.5px] font-medium text-[#606060] text-center mt-5'>전략가들이 검증한 시스템트레이딩 전략을
+              <h3 className='md:text-[1.5rem] text-[1.125rem] md:leading-[2.125rem] leading-[1.75rem] font-bold -tracking-[1.5px] text-center text-[#171717] mt-10'>자동매매 프로그램 무료 제공</h3>
+              <p className='md:text-[1rem] text-[0.8rem] md:leading-[1.6rem] leading-[1.375rem] -tracking-[1.5px] font-medium text-[#606060] text-center mt-5'>전략가들이 검증한 시스템트레이딩 전략을
                 쉽고 간편하게 이용가능</p>
             </div>
           </div>
           <div className='md:p-8 p-4'>
             <Image src={Flow} alt="Image" className='mx-auto' />
             <div>
-              <h3 className='md:text-[1.5rem] md:leading-[2.125rem] font-bold -tracking-[1.5px] text-center text-[#171717] mt-10'>상위 전략가들의 전략 분석 제공</h3>
-              <p className='md:text-[1rem] md:leading-[1.6rem] -tracking-[1.5px] font-medium text-[#606060] text-center mt-5'>흩어져 있어 찾기 어려운 전세계 다양한 전략 및
+              <h3 className='md:text-[1.5rem] text-[1.125rem] md:leading-[2.125rem] leading-[1.75rem] font-bold -tracking-[1.5px] text-center text-[#171717] mt-10'>상위 전략가들의 전략 분석 제공</h3>
+              <p className='md:text-[1rem] text-[0.8rem] md:leading-[1.6rem] leading-[1.375rem] -tracking-[1.5px] font-medium text-[#606060] text-center mt-5'>흩어져 있어 찾기 어려운 전세계 다양한 전략 및
                 개인 맞춤 전략 제작 제공</p>
             </div>
           </div>
           <div className='md:p-8 p-4'>
             <Image src={Smiley} alt="Image" className='mx-auto' />
             <div>
-              <h3 className='md:text-[1.5rem] md:leading-[2.125rem] font-bold -tracking-[1.5px] text-center text-[#171717] mt-10'>교류하는 놀이터, 커뮤니티 공간</h3>
-              <p className='md:text-[1rem] md:leading-[1.6rem] -tracking-[1.5px] font-medium text-[#606060] text-center mt-5'>시스템트레이더 간
+              <h3 className='md:text-[1.5rem] text-[1.125rem] md:leading-[2.125rem] leading-[1.75rem] font-bold -tracking-[1.5px] text-center text-[#171717] mt-10'>교류하는 놀이터, 커뮤니티 공간</h3>
+              <p className='md:text-[1rem] text-[0.8rem] md:leading-[1.6rem] leading-[1.375rem] -tracking-[1.5px] font-medium text-[#606060] text-center mt-5'>시스템트레이더 간
                 전략 아이디어 교류를 위한 소통의 장</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className='py-20'>
+      <section className='py-20 md:px-auto px-6'>
         <div className='container mx-auto'>
-          <h3 className='md:text-[3.125rem] md:leading-[3.6rem] font-bold -tracking-[1.5px] text-center text-[#171717]'>더 궁금한 점이 있으신가요?</h3>
+          <h3 className='md:text-[3.125rem] text-[1.5rem] md:leading-[3.6rem] leading-[1.875rem] font-bold -tracking-[1.5px] text-center text-[#171717]'>더 궁금한 점이 있으신가요?</h3>
         </div>
-        <div className='container mx-auto grid md:grid-cols-3 grid-cols-1 md:gap-14 gap-7 md:pt-20 '>
-          <div className='bg-[#F9FAFB] border border-[#F2F2F2] rounded-[40px] md:p-10'>
-            <h3 className='md:text-[2rem] md:leading-[2.375rem] font-bold -tracking-[1.5px] text-[#171717] mt-10'>이용요금</h3>
-            <p className='md:text-[1rem] md:leading-[1.18rem] -tracking-[1.5px] font-normal text-[#333333] mt-5'>기본서비스는 무료로 제공되어요.</p>
-            <Link href="#" className='md:text-[1.25rem] md:leading-[1.43rem] font-medium -tracking-[1.5px] text-[#909090] flex items-center gap-3 mt-12'>이용권 등록 바로가기
+        <div className='container mx-auto grid md:grid-cols-3 grid-cols-1 md:gap-14 gap-7 md:pt-20 pt-8 '>
+          <div className='bg-[#F9FAFB] border border-[#F2F2F2] rounded-[40px] md:p-10 p-6 flex md:flex-col flex-row items-center'>
+            <div className='md:w-full w-1/2'>
+              <h3 className='md:text-[2rem] md:leading-[2.375rem] font-bold -tracking-[1.5px] text-[#171717] md:mt-10'>이용요금</h3>
+              <p className='md:text-[1rem] md:leading-[1.18rem] -tracking-[1.5px] font-normal text-[#333333] mt-5 md:block hidden'>기본서비스는 무료로 제공되어요.</p>
+            </div>
+            <Link href="#" className='md:w-full w-1/2 md:text-[1.25rem] text-[0.875rem] md:leading-[1.43rem] leading-[1rem] font-medium -tracking-[1.5px] text-[#909090] flex items-center gap-3 md:mt-12'>이용권 등록 바로가기
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-4 h-4">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
               </svg>
             </Link>
           </div>
-          <div className='bg-[#F9FAFB] border border-[#F2F2F2] rounded-[40px] md:p-10'>
-            <h3 className='md:text-[2rem] md:leading-[2.375rem] font-bold -tracking-[1.5px] text-[#171717] mt-10'>이용안내</h3>
-            <p className='md:text-[1rem] md:leading-[1.18rem] -tracking-[1.5px] font-normal text-[#333333] mt-5'>궁금해하실 모든 내용을 담아봤어요.</p>
-            <Link href="#" className='md:text-[1.25rem] md:leading-[1.43rem] font-medium -tracking-[1.5px] text-[#909090] flex items-center gap-3 mt-12'>이용안내 바로가기
+          <div className='bg-[#F9FAFB] border border-[#F2F2F2] rounded-[40px] md:p-10 p-6 flex md:flex-col flex-row items-center'>
+            <div className='md:w-full w-1/2'>
+              <h3 className='md:text-[2rem] md:leading-[2.375rem] font-bold -tracking-[1.5px] text-[#171717] md:mt-10'>이용안내</h3>
+              <p className='md:text-[1rem] md:leading-[1.18rem] -tracking-[1.5px] font-normal text-[#333333] mt-5 md:block hidden'>궁금해하실 모든 내용을 담아봤어요.</p>
+            </div>
+            <Link href="#" className='md:w-full w-1/2 md:text-[1.25rem] text-[0.875rem] md:leading-[1.43rem] leading-[1rem] font-medium -tracking-[1.5px] text-[#909090] flex items-center gap-3 md:mt-12'>이용안내 바로가기
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-4 h-4">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
               </svg>
             </Link>
           </div>
-          <div className='bg-[#F9FAFB] border border-[#F2F2F2] rounded-[40px] md:p-10'>
-            <h3 className='md:text-[2rem] md:leading-[2.375rem] font-bold -tracking-[1.5px] text-[#171717] mt-10'>고객센터</h3>
-            <p className='md:text-[1rem] md:leading-[1.18rem] -tracking-[1.5px] font-normal text-[#333333] mt-5'>어려운 점이 있으신가요?
-              퀀트로 고객센터로 문의주세요.</p>
-            <Link href="#" className='md:text-[1.25rem] md:leading-[1.43rem] font-medium -tracking-[1.5px] text-[#909090] flex items-center gap-3 mt-12'>1:1문의 바로가기
+          <div className='bg-[#F9FAFB] border border-[#F2F2F2] rounded-[40px] md:p-10 p-6 flex md:flex-col flex-row items-center'>
+            <div className='md:w-full w-1/2'>
+              <h3 className='md:text-[2rem] md:leading-[2.375rem] font-bold -tracking-[1.5px] text-[#171717] md:mt-10'>고객센터</h3>
+              <p className='md:text-[1rem] md:leading-[1.18rem] -tracking-[1.5px] font-normal text-[#333333] mt-5 md:block hidden'>어려운 점이 있으신가요?
+                퀀트로 고객센터로 문의주세요.</p>
+            </div>
+            <Link href="#" className='md:w-full w-1/2 md:text-[1.25rem] text-[0.875rem] md:leading-[1.43rem] leading-[1rem] font-medium -tracking-[1.5px] text-[#909090] flex items-center gap-3 md:mt-12'>1:1문의 바로가기
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-4 h-4">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
               </svg>
