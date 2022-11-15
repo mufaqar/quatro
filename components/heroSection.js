@@ -4,7 +4,7 @@ import HeroImage from '../public/images/mbl_hero.png';
 
 export default function HeroSection() {
   return (
-    <section className='bg-[#D8E0ED] md:py-28 py-20 md:bg-[url("/images/hero_img.png")] bg-no-repeat bg-contain bg-right'>
+    <section className='bg-[#D8E0ED] md:pt-28 md:pb-16 py-20 md:bg-[url("/images/hero_img.png")] bg-no-repeat bg-contain bg-right'>
       <div className="container mx-auto flex md:flex-row flex-col items-center">
         <div className="md:w-2/3 w-full md:pl-32 md:px-auto px-6 ">
           <h1 className="md:text-[3.75rem] text-[2rem] md:leading-[5.25rem] leading-[2.75rem] font-bold -tracking-[1.5px] text-[#171717] md:text-start text-center">
@@ -17,13 +17,13 @@ export default function HeroSection() {
           <div className="mt-12 gap-5 flex md:flex-row flex-col md:px-auto px-6 ">
             <Link
               href="/"
-              className="bg-[#F39200] w-fit md:mx-0 mx-auto border-2 border-[#F39200] px-5 py-2 rounded-full textWhite md:text-[1.25rem] text-[1rem] md:leading-[1.5rem] font-bold text-white"
+              className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-[#F39200] hover:bg-transparent w-fit md:mx-0 mx-auto border-2 border-[#F39200] px-5 py-2 rounded-full textWhite md:text-[1.25rem] text-[1rem] md:leading-[1.5rem] font-bold text-white hover:text-[#F39200]"
             >
               퀀트로 바로가기
             </Link>
             <Link
               href="mailto:help@quantro.net"
-              className="bg-transparent w-fit md:mx-0 mx-auto border-2 border-black/10 px-5 py-2 rounded-full md:text-[1.25rem] text-[1rem] md:leading-[1.5rem] font-bold text-[#171717]"
+              className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-transparent hover:bg-[#171717] w-fit md:mx-0 mx-auto border-2 border-black/10 px-5 py-2 rounded-full md:text-[1.25rem] text-[1rem] md:leading-[1.5rem] font-bold text-[#171717] hover:text-white"
             >
               이용안내
             </Link>
@@ -37,7 +37,7 @@ export default function HeroSection() {
           />
         </div>
       </div>
-      <div className="relative ">
+      <div className="relative mt-5">
         <Link href="/#investment" className="mt-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ export default function HeroSection() {
             viewBox="0 0 24 24"
             strokeWidth="2"
             stroke="currentColor"
-            className="w-10 h-10 text-white mx-auto"
+            className="w-10 h-10 text-white mx-auto animate-bounce"
           >
             <path
               strokeLinecap="round"
@@ -56,7 +56,7 @@ export default function HeroSection() {
         </Link>
         <Link
           href=""
-          className="fixed top-40 right-5 text-[1rem] leading-[1.1rem]"
+          className="fixed bottom-40 right-5 text-[1rem] leading-[1.1rem] z-50"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
