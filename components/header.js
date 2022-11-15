@@ -21,7 +21,7 @@ function Header() {
                 <Link href="/">
                   <Image src={Logo} alt="Logo" />
                 </Link>
-                <div className="md:hidden">
+                <div className="md:hidden hidden">
                   <button
                     className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                     onClick={() => setNavbar(!navbar)}
