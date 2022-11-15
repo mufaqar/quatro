@@ -55,8 +55,8 @@ export default function HeroSection() {
           </svg>
         </Link>
         <Link
-          href=""
-          className="fixed bottom-40 right-5 text-[1rem] leading-[1.1rem] z-50"
+          href="https://pf.kakao.com/_dynxfxj" target="_blank"
+          className="fixed bottom-20 right-5 text-[1rem] leading-[1.1rem] z-50"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
