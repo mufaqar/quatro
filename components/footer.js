@@ -16,7 +16,7 @@ export default function Footer() {
                         <li className='text-[#949FA6] md:before:content-["_|"] md:before:mr-4'>대표 김나환</li>
                         <li className='text-[#949FA6] md:before:content-["_|"] md:before:mr-4'>사업자등록번호 837-08-02110</li>
                         <li className='text-[#949FA6] md:before:content-["_|"] md:before:mr-4'>
-                            <Link href="#">help@quantro.net</Link>
+                            <Link href="mailto:help@quantro.net">help@quantro.net</Link>
                         </li>
                     </ul>
                     <ul className='md:text-[0.75rem] text-[0.75rem] md:leading-[1.25rem] font-medium'>
