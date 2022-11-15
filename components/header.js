@@ -18,9 +18,9 @@ function Header() {
                     <div className="justify-between container mx-auto px-5 md:items-center md:flex">
                         <div>
                             <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                                <a href="#">
+                                <Link href="/">
                                     <Image src={Logo} alt="Logo" />
-                                </a>
+                                </Link>
                                 <div className="md:hidden">
                                     <button
                                         className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"

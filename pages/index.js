@@ -15,18 +15,19 @@ import Card6 from '../public/images/card6.png';
 import PostBox from '../components/postBox';
 import Blog1 from '../public/images/blog1.png';
 import Blog2 from '../public/images/blog2.png';
-import MblBG from '../public/images/bgMbl.png';
 import Icon1 from '../public/images/icon1.png';
+import Smiley from '../public/images/smiley.png';
+import Flow from '../public/images/flow.png';
 
 export default function Home() {
   return (
     <>
       <HeroSection />
 
-      <section className='bg-gradient-to-b from-[#D8E0ED] py-14 '>
+      <section className='bg-gradient-to-b from-[#D8E0ED] py-20 md:px-auto px-6'>
         <div className='container mx-auto'>
-          <h2 className='md:text-[5.75rem] md:leading-[10.4rem] font-bold -tracking-[1.5px] text-center text-black/20'>시스템 트레이딩의 진입장벽,</h2>
-          <p className='md:text-[3.25rem] md:leading-[3.8rem] font-bold -tracking-[1.5px] text-center text-[#171717]'>퀀트로는 이렇게 낮췄어요.</p>
+          <h2 className='md:text-[5.75rem] text-[2rem] md:leading-[10.4rem] leading-[2.375rem] font-bold -tracking-[1.5px] text-center text-black/20'>시스템 트레이딩의 진입장벽,</h2>
+          <p className='md:text-[3.25rem] text-[1.25rem] md:leading-[3.8rem] leading-[1.438rem] font-bold -tracking-[1.5px] text-center text-[#171717] mt-5'>퀀트로는 이렇게 낮췄어요.</p>
         </div>
         <div className='container mx-auto grid md:grid-cols-3 grid-cols-1 gap-8 mt-12'>
           <ServiceBox bgColour="bg-[#A9D2FF]" image_path={Code} title="코딩 걱정 없이" content="자동매매를 하고 싶지만, 코딩이 걱정이라면? 전략 아이디어만 있다면 나만의 전략은 퀀트로에서 실현 시킬 수 있어요." />
@@ -39,10 +40,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='py-14'>
-        <div className='container mx-auto grid md:grid-cols-3 grid-cols-1 gap-8 mt-12'>
+      <section className='py-20 md:px-auto px-6'>
+        <div className='container mx-auto grid md:grid-cols-3 grid-cols-1 mt-12'>
           <div className='col-span-2'>
-            <h1 className='md:text-[3.75rem] md:leading-[5.25rem] font-bold -tracking-[1.5px] text-[#171717] md:text-start text-center'>
+            <h1 className='md:text-[3.75rem] text-[2rem] md:leading-[5.25rem] leading-[2.75rem] font-bold -tracking-[1.5px] text-[#171717] md:text-start text-center'>
               퀀트투자,<br></br>
               편리함에 전략을 더해
             </h1>
@@ -68,9 +69,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='py-16 bg-[#333333]'>
+      <section className='py-20 bg-[#333333] md:px-auto px-6'>
         <div className='container mx-auto'>
-          <h1 className='md:text-[3.75rem] md:leading-[5.25rem] font-bold -tracking-[1.5px] text-[#F9FAFB] md:text-start text-center'>
+          <h1 className='md:text-[3.75rem] text-[2rem] md:leading-[5.25rem] leading-[2.75rem] font-bold -tracking-[1.5px] text-[#F9FAFB] md:text-start text-center'>
             퀀트투자,<br></br>
             편리함에 전략을 더해
           </h1>
@@ -81,16 +82,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='py-16 bg-[#F9FAFB] relative'>
-        <Image src={MblBG} alt="Image" className='absolute right-0 top-0 max-w-[450px]' />
+      <section className='py-20 bg-[#F9FAFB] bg-[url(/images/bgMbl.png)] bg-contain bg-no-repeat bg-right'>
         <div className='container mx-auto text-center '>
           <h3 className='md:text-[3.75rem] md:leading-[5.25rem] font-light -tracking-[1.5px] text-center text-[#171717]'>거래소 통합주문 플랫폼</h3>
           <h3 className='md:text-[3.75rem] md:leading-[5.25rem] font-bold -tracking-[1.5px] text-center text-[#171717] mb-8'>퀀트로, 간편하게 시작해보세요.</h3>
           <Link href="#" className='bg-[#F39200] w-fit mx-auto border-2 border-[#F39200] px-5 py-2 rounded-full textWhite md:text-[1.25rem] md:leading-[1.5rem] font-bold'>이용권 등록 바로가기</Link>
-
         </div>
-        <div className='container mx-auto grid md:grid-cols-3 grid-cols-1 md:gap-14 md:pt-20 z-50'>
-          <div className=''>
+        <div className='container mx-auto grid md:grid-cols-3 grid-cols-1 md:gap-14 md:pt-20 '>
+          <div className='md:p-8 p-4'>
             <Image src={Icon1} alt="Image" className='mx-auto' />
             <div>
               <h3 className='md:text-[1.5rem] md:leading-[2.125rem] font-bold -tracking-[1.5px] text-center text-[#171717] mt-10'>자동매매 프로그램 무료 제공</h3>
@@ -98,21 +97,57 @@ export default function Home() {
                 쉽고 간편하게 이용가능</p>
             </div>
           </div>
-          <div className=''>
-            <Image src={Icon1} alt="Image" className='mx-auto' />
+          <div className='md:p-8 p-4'>
+            <Image src={Flow} alt="Image" className='mx-auto' />
             <div>
-              <h3 className='md:text-[1.5rem] md:leading-[2.125rem] font-bold -tracking-[1.5px] text-center text-[#171717] mt-10'>자동매매 프로그램 무료 제공</h3>
-              <p className='md:text-[1rem] md:leading-[1.6rem] -tracking-[1.5px] font-medium text-[#606060] text-center mt-5'>전략가들이 검증한 시스템트레이딩 전략을
-                쉽고 간편하게 이용가능</p>
+              <h3 className='md:text-[1.5rem] md:leading-[2.125rem] font-bold -tracking-[1.5px] text-center text-[#171717] mt-10'>상위 전략가들의 전략 분석 제공</h3>
+              <p className='md:text-[1rem] md:leading-[1.6rem] -tracking-[1.5px] font-medium text-[#606060] text-center mt-5'>흩어져 있어 찾기 어려운 전세계 다양한 전략 및
+                개인 맞춤 전략 제작 제공</p>
             </div>
           </div>
-          <div className=''>
-            <Image src={Icon1} alt="Image" className='mx-auto' />
+          <div className='md:p-8 p-4'>
+            <Image src={Smiley} alt="Image" className='mx-auto' />
             <div>
-              <h3 className='md:text-[1.5rem] md:leading-[2.125rem] font-bold -tracking-[1.5px] text-center text-[#171717] mt-10'>자동매매 프로그램 무료 제공</h3>
-              <p className='md:text-[1rem] md:leading-[1.6rem] -tracking-[1.5px] font-medium text-[#606060] text-center mt-5'>전략가들이 검증한 시스템트레이딩 전략을
-                쉽고 간편하게 이용가능</p>
+              <h3 className='md:text-[1.5rem] md:leading-[2.125rem] font-bold -tracking-[1.5px] text-center text-[#171717] mt-10'>교류하는 놀이터, 커뮤니티 공간</h3>
+              <p className='md:text-[1rem] md:leading-[1.6rem] -tracking-[1.5px] font-medium text-[#606060] text-center mt-5'>시스템트레이더 간
+                전략 아이디어 교류를 위한 소통의 장</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='py-20'>
+        <div className='container mx-auto'>
+          <h3 className='md:text-[3.125rem] md:leading-[3.6rem] font-bold -tracking-[1.5px] text-center text-[#171717]'>더 궁금한 점이 있으신가요?</h3>
+        </div>
+        <div className='container mx-auto grid md:grid-cols-3 grid-cols-1 md:gap-14 gap-7 md:pt-20 '>
+          <div className='bg-[#F9FAFB] border border-[#F2F2F2] rounded-[40px] md:p-10'>
+            <h3 className='md:text-[2rem] md:leading-[2.375rem] font-bold -tracking-[1.5px] text-[#171717] mt-10'>이용요금</h3>
+            <p className='md:text-[1rem] md:leading-[1.18rem] -tracking-[1.5px] font-normal text-[#333333] mt-5'>기본서비스는 무료로 제공되어요.</p>
+            <Link href="#" className='md:text-[1.25rem] md:leading-[1.43rem] font-medium -tracking-[1.5px] text-[#909090] flex items-center gap-3 mt-12'>이용권 등록 바로가기
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-4 h-4">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </Link>
+          </div>
+          <div className='bg-[#F9FAFB] border border-[#F2F2F2] rounded-[40px] md:p-10'>
+            <h3 className='md:text-[2rem] md:leading-[2.375rem] font-bold -tracking-[1.5px] text-[#171717] mt-10'>이용안내</h3>
+            <p className='md:text-[1rem] md:leading-[1.18rem] -tracking-[1.5px] font-normal text-[#333333] mt-5'>궁금해하실 모든 내용을 담아봤어요.</p>
+            <Link href="#" className='md:text-[1.25rem] md:leading-[1.43rem] font-medium -tracking-[1.5px] text-[#909090] flex items-center gap-3 mt-12'>이용안내 바로가기
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-4 h-4">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </Link>
+          </div>
+          <div className='bg-[#F9FAFB] border border-[#F2F2F2] rounded-[40px] md:p-10'>
+            <h3 className='md:text-[2rem] md:leading-[2.375rem] font-bold -tracking-[1.5px] text-[#171717] mt-10'>고객센터</h3>
+            <p className='md:text-[1rem] md:leading-[1.18rem] -tracking-[1.5px] font-normal text-[#333333] mt-5'>어려운 점이 있으신가요?
+              퀀트로 고객센터로 문의주세요.</p>
+            <Link href="#" className='md:text-[1.25rem] md:leading-[1.43rem] font-medium -tracking-[1.5px] text-[#909090] flex items-center gap-3 mt-12'>1:1문의 바로가기
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-4 h-4">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>
