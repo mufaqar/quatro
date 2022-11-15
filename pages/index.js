@@ -40,7 +40,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='py-20 md:px-auto px-6'>
+      <section className='py-20 md:px-auto px-6' id="investment">
         <div className='container mx-auto grid md:grid-cols-3 grid-cols-1 mt-12'>
           <div className='col-span-2'>
             <h1 className='md:text-[3.75rem] text-[2rem] md:leading-[5.25rem] leading-[2.75rem] font-bold -tracking-[1.5px] text-[#171717] md:text-start text-center'>

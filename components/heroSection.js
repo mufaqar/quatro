@@ -55,7 +55,7 @@ export default function HeroSection() {
           </svg>
         </Link>
         <Link
-          href="#"
+          href="#investment"
           className="absolute top-0 right-5 text-[1rem] leading-[1.1rem]"
         >
           <svg
