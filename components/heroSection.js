@@ -38,7 +38,7 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="relative ">
-        <Link href="#" className="mt-10">
+        <Link href="/#investment" className="mt-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -55,7 +55,7 @@ export default function HeroSection() {
           </svg>
         </Link>
         <Link
-          href="#investment"
+          href=""
           className="absolute top-0 right-5 text-[1rem] leading-[1.1rem]"
         >
           <svg
