@@ -120,7 +120,7 @@ export default function Home() {
         <div className='container mx-auto'>
           <h3 className='md:text-[3.125rem] text-[1.5rem] md:leading-[3.6rem] leading-[1.875rem] font-bold -tracking-[1.5px] text-center text-[#171717]'>더 궁금한 점이 있으신가요?</h3>
         </div>
-        <div className='container mx-auto grid md:grid-cols-3 grid-cols-1 md:gap-14 gap-7 md:pt-20 pt-8 '>
+        <div className='container mx-auto grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-7 md:pt-20 pt-8 '>
           <Link href="#">
             <div className='bg-[#F9FAFB] border border-[#F2F2F2] hover:border-[#333333] rounded-[40px] md:p-10 p-6 flex md:flex-col flex-row items-center hover:scale-105 transition ease-in-out delay-150'>
               <div className='md:w-full w-1/2'>
