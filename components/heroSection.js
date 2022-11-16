@@ -35,10 +35,12 @@ export default function HeroSection() {
             initial="offScreen"
             whileInView="onScreen"
             viewport={{ once: true, amount: 0.1 }}
-            transition={{delay:.4}}>
+            transition={{delay:.4}}
+            whileHover={{ scale: 1.1}}
+            >
               <Link
                 href="/"
-                className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-[#F39200] hover:bg-[#E1740F] w-fit md:mx-0 mx-auto border-2 border-[#F39200] hover:border-[#E1740F] px-5 py-2 rounded-full md:text-[1.25rem] text-[1rem] md:leading-[1.5rem] font-bold text-white"
+                className="bg-[#F39200] hover:bg-[#E1740F] w-fit md:mx-0 mx-auto border-2 border-[#F39200] hover:border-[#E1740F] px-5 py-2 rounded-full md:text-[1.25rem] text-[1rem] md:leading-[1.5rem] font-bold text-white"
               >
                 퀀트로 바로가기
               </Link>
@@ -48,10 +50,11 @@ export default function HeroSection() {
             whileInView="onScreen"
             viewport={{ once: true, amount: 0.1, delay: 2 }}
             transition={{delay:.5}}
+            whileHover={{ scale: 1.1}}
             >
               <Link
                 href="mailto:help@quantro.net"
-                className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-transparent w-fit md:mx-0 mx-auto border-2 border-black/10 hover:border-black/50 px-5 py-2 rounded-full md:text-[1.25rem] text-[1rem] md:leading-[1.5rem] font-bold text-[#171717] "
+                className="bg-transparent w-fit md:mx-0 mx-auto border-2 border-black/10 hover:border-black/50 px-5 py-2 rounded-full md:text-[1.25rem] text-[1rem] md:leading-[1.5rem] font-bold text-[#171717] "
               >
                 이용안내
               </Link>

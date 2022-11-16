@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+/* custom fonts  */
+@font-face {
+    font-family: PretendardBold;
+    src: url('../public/fonts/Pretendard-Bold.otf');
+}
+@font-face {
+    font-family: PretendardLight;
+    src: url('../public/fonts/Pretendard-Light.otf');
+}
+@font-face {
+    font-family: PretendardReg;
+    src: url('../public/fonts/Pretendard-Regular.otf');
+}
+
+h3,h4,h5,h6,h2,h1{
+    font-family: PretendardBold !important;
+}
+p{
+    font-family: PretendardLight;
+}

@@ -31,9 +31,9 @@ export default function Home() {
       <section className='bg-gradient-to-b from-[#D8E0ED] py-20 md:px-auto px-6'>
         <div className='container mx-auto'>
           <motion.h2 className='md:text-[5.75rem] text-[2rem] md:leading-[10.4rem] leading-[2.375rem] font-bold -tracking-[1.5px] text-center text-black/20'
-          variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>시스템 트레이딩의 진입장벽,</motion.h2>
+            variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>시스템 트레이딩의 진입장벽,</motion.h2>
           <motion.p className='md:text-[3.25rem] text-[1.25rem] md:leading-[3.8rem] leading-[1.438rem] font-bold -tracking-[1.5px] text-center text-[#171717] mt-5'
-          variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>퀀트로는 이렇게 낮췄어요.</motion.p>
+            variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>퀀트로는 이렇게 낮췄어요.</motion.p>
         </div>
         <div className='container mx-auto grid md:grid-cols-3 grid-cols-1 gap-8 mt-12'>
           <ServiceBox bgColour="bg-[#A9D2FF]" image_path={Code} title="코딩 걱정 없이" content="자동매매를 하고 싶지만, 코딩이 걱정이라면? 전략 아이디어만 있다면 나만의 전략은 퀀트로에서 실현 시킬 수 있어요." _delay="0.1" />
@@ -55,10 +55,9 @@ export default function Home() {
             </h1>
           </div>
           <motion.div className='grid gap-8' variants={TextAnimation} initial="offScreen" whileInView="onScreen" >
-            <Card image_path={Card1} title="모든 거래소를 한번에 통합관리" content="바이낸스,바이빗,비트겟,업비트 등 
+            <Card image_path={Card1} title="모든 거래소를 <br/> 한번에 통합관리" content="바이낸스,바이빗,비트겟,업비트 등 
                   국내외의 다양한 거래소를 통합하여 한곳에서 
-                  주문을 관리할수 있어요."
-                   />
+                  주문을 관리할수 있어요." />
             <Card image_path={Card2} title="누구든지, 쉽게 " content="트레이딩뷰와 연동하여 쉽고 편리하게
                   자동매매 가능한 프로그램을 제공해요." />
             <Card image_path={Card3} title="시스템 트레이딩의 소통 놀이터로" content="사용자간의 피드백과 의견을 주고받을 수 있는 
@@ -92,33 +91,33 @@ export default function Home() {
       <section className='py-20 md:px-auto px-6 bg-[#F9FAFB] md:bg-[url(/images/bgMbl.png)] bg-contain bg-no-repeat bg-right'>
         <div className='container mx-auto text-center '>
           <motion.h3 className='md:text-[3.75rem] text-[1.5rem] md:leading-[5.25rem] leading-[1.875rem] font-light -tracking-[1.5px] text-center text-[#171717]'
-          variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>거래소 통합주문 플랫폼</motion.h3>
+            variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>거래소 통합주문 플랫폼</motion.h3>
           <motion.h3 className='md:text-[3.75rem] text-[1.75rem] md:leading-[5.25rem] leading-[2.1rem] font-bold -tracking-[1.5px] text-center text-[#171717] mt-5 mb-10'
-          variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>퀀트로, 간편하게 시작해보세요.</motion.h3>
+            variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>퀀트로, 간편하게 시작해보세요.</motion.h3>
           <Link href="#" className='bg-[#F39200] hover:bg-[#E1740F] text-white w-fit mx-auto border-2 border-[#F39200] hover:border-[#E1740F] px-5 py-2 rounded-full md:text-[1.25rem] md:leading-[1.5rem] font-bold'>이용권 등록 바로가기</Link>
         </div>
         <div className='container mx-auto grid md:grid-cols-3 grid-cols-1 gap-14 md:pt-20 pt-16 '>
           <div className='md:p-8 p-4'>
-            <figure variants={ZoomAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} translate={{delay:0.1}}><Image src={Icon1} alt="Image" className='mx-auto' /></figure>
+            <figure variants={ZoomAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} translate={{ delay: 0.1 }}><Image src={Icon1} alt="Image" className='mx-auto' /></figure>
             <div>
               <motion.h3 className='md:text-[1.5rem] text-[1.125rem] md:leading-[2.125rem] leading-[1.75rem] font-bold -tracking-[1.5px] text-center text-[#171717] mt-10'
-              variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>자동매매 프로그램 무료 제공</motion.h3>
+                variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>자동매매 프로그램 무료 제공</motion.h3>
               <motion.p className='md:text-[1rem] text-[0.8rem] md:leading-[1.6rem] leading-[1.375rem] -tracking-[1.5px] font-medium text-[#606060] text-center mt-5' variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>전략가들이 검증한 시스템트레이딩 전략을
                 쉽고 간편하게 이용가능</motion.p>
             </div>
           </div>
           <div className='md:p-8 p-4'>
-            <figure variants={ZoomAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} translate={{delay:0.2}}><Image src={Flow} alt="Image" className='mx-auto' /></figure>
+            <figure variants={ZoomAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} translate={{ delay: 0.2 }}><Image src={Flow} alt="Image" className='mx-auto' /></figure>
             <div>
               <motion.h3 className='md:text-[1.5rem] text-[1.125rem] md:leading-[2.125rem] leading-[1.75rem] font-bold -tracking-[1.5px] text-center text-[#171717] mt-10'
-              variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>상위 전략가들의 전략 분석 제공</motion.h3>
+                variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>상위 전략가들의 전략 분석 제공</motion.h3>
               <motion.p className='md:text-[1rem] text-[0.8rem] md:leading-[1.6rem] leading-[1.375rem] -tracking-[1.5px] font-medium text-[#606060] text-center mt-5'
-              variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>흩어져 있어 찾기 어려운 전세계 다양한 전략 및
+                variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>흩어져 있어 찾기 어려운 전세계 다양한 전략 및
                 개인 맞춤 전략 제작 제공</motion.p>
             </div>
           </div>
           <div className='md:p-8 p-4'>
-            <figure iants={ZoomAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} translate={{delay:0.3}}><Image src={Smiley} alt="Image" className='mx-auto' /></figure>
+            <figure iants={ZoomAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} translate={{ delay: 0.3 }}><Image src={Smiley} alt="Image" className='mx-auto' /></figure>
             <div>
               <motion.h3 className='md:text-[1.5rem] text-[1.125rem] md:leading-[2.125rem] leading-[1.75rem] font-bold -tracking-[1.5px] text-center text-[#171717] mt-10' variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>교류하는 놀이터, 커뮤니티 공간</motion.h3>
               <motion.p className='md:text-[1rem] text-[0.8rem] md:leading-[1.6rem] leading-[1.375rem] -tracking-[1.5px] font-medium text-[#606060] text-center mt-5' variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>시스템트레이더 간
@@ -134,8 +133,8 @@ export default function Home() {
         </div>
         <motion.div className='container mx-auto grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-7 md:pt-20 pt-8 '>
           <Link href="#">
-            <motion.div className='bg-[#F9FAFB] border border-[#F2F2F2] hover:border-[#333333] rounded-[40px] md:p-10 p-6 flex md:flex-col flex-row items-center hover:scale-105 transition ease-in-out delay-150'
-            variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} transition={{delay:0.1}}>
+            <motion.div className='bg-[#F9FAFB] border border-[#F2F2F2] hover:border-[#333333] rounded-[40px] md:p-10 p-6 flex md:flex-col flex-row items-center'
+              variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} transition={{ delay: 0.1 }} whileHover={{ scale: 1.1 }}>
               <div className='md:w-full w-1/2'>
                 <h3 className='md:text-[2rem] md:leading-[2.375rem] font-bold -tracking-[1.5px] text-[#171717] md:mt-10'>이용요금</h3>
                 <p className='md:text-[1rem] md:leading-[1.18rem] -tracking-[1.5px] font-normal text-[#333333] mt-5 md:block hidden'>기본서비스는 무료로 제공되어요.</p>
@@ -148,8 +147,8 @@ export default function Home() {
             </motion.div>
           </Link>
           <Link href="#">
-            <motion.div className='bg-[#F9FAFB] border border-[#F2F2F2] hover:border-[#333333] rounded-[40px] md:p-10 p-6 flex md:flex-col flex-row items-center hover:scale-105 transition ease-in-out delay-150'
-            variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} transition={{delay:0.2}}>
+            <motion.div className='bg-[#F9FAFB] border border-[#F2F2F2] hover:border-[#333333] rounded-[40px] md:p-10 p-6 flex md:flex-col flex-row items-center'
+              variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} transition={{ delay: 0.2 }} whileHover={{ scale: 1.1 }}>
               <div className='md:w-full w-1/2'>
                 <h3 className='md:text-[2rem] md:leading-[2.375rem] font-bold -tracking-[1.5px] text-[#171717] md:mt-10'>이용안내</h3>
                 <p className='md:text-[1rem] md:leading-[1.18rem] -tracking-[1.5px] font-normal text-[#333333] mt-5 md:block hidden'>궁금해하실 모든 내용을 담아봤어요.</p>
@@ -162,8 +161,8 @@ export default function Home() {
             </motion.div>
           </Link>
           <Link href="#">
-            <motion.div className='bg-[#F9FAFB] border border-[#F2F2F2] hover:border-[#333333] rounded-[40px] md:p-10 p-6 flex md:flex-col flex-row items-center hover:scale-105 transition ease-in-out delay-150'
-            variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} transition={{delay:0.3}}>
+            <motion.div className='bg-[#F9FAFB] border border-[#F2F2F2] hover:border-[#333333] rounded-[40px] md:p-10 p-6 flex md:flex-col flex-row items-center'
+              variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} transition={{ delay: 0.3 }} whileHover={{ scale: 1.1 }}>
               <div className='md:w-full w-1/2'>
                 <h3 className='md:text-[2rem] md:leading-[2.375rem] font-bold -tracking-[1.5px] text-[#171717] md:mt-10'>고객센터</h3>
                 <p className='md:text-[1rem] md:leading-[1.18rem] -tracking-[1.5px] font-normal text-[#333333] mt-5 md:block hidden'>어려운 점이 있으신가요?

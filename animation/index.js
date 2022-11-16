@@ -5,7 +5,8 @@ export const TextAnimation = {
     },
     offScreen: {
         opacity: 0,
-        y: '30px'
+        y: '30px',
+        scale: 1,
     }
 }
 
