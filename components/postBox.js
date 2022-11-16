@@ -16,7 +16,7 @@ export default function PostBox({ title, content, image_path,category }) {
                     {content}</motion.p>
             </div>
             <motion.div>
-                <Image src={image_path} alt="Image" className='rounded-[32px] w-full lg:max-w-[609px] hover:scale-105 transition ease-in-out delay-150'/>
+                <Image src={image_path} alt="Image" className='rounded-[32px] w-full lg:max-w-[609px]'/>
             </motion.div>
         </div>
     )

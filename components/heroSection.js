@@ -36,7 +36,7 @@ export default function HeroSection() {
             whileInView="onScreen"
             viewport={{ once: true, amount: 0.1 }}
             transition={{delay:.4}}
-            whileHover={{ scale: 1.1}}
+            
             >
               <Link
                 href="/"
@@ -50,7 +50,7 @@ export default function HeroSection() {
             whileInView="onScreen"
             viewport={{ once: true, amount: 0.1, delay: 2 }}
             transition={{delay:.5}}
-            whileHover={{ scale: 1.1}}
+            
             >
               <Link
                 href="mailto:help@quantro.net"

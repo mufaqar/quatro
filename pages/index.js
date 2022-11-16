@@ -68,7 +68,7 @@ export default function Home() {
             <Card image_path={Card5} title="전문가가 코딩해주는 <br/> 나만의 전략" content="사용자간의 피드백과 의견을 주고받을 수 있는 
                   커뮤니티와 퀀트로 이용자라면 사용가능한
                   무료 시스템 전략을 제공합니다." />
-            <Card image_path={Card6} title="PC,모바일 구애없이 <br/> 언제 어디서나" content="한글/영문 언어지원과 달러/원화 단위변환 등
+            <Card image_path={Card6} title="PC,모바일 구애없이 <br/> <br/>언제 어디서나" content="한글/영문 언어지원과 달러/원화 단위변환 등
                   시스템 트레이딩을 위한 최적의 옵션을 제공하며
                   텔레그램을 통해 상세한 주문내역을 받아보세요." />
           </motion.div>
@@ -134,7 +134,7 @@ export default function Home() {
         <motion.div className='container mx-auto grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-7 md:pt-20 pt-8 '>
           <Link href="#">
             <motion.div className='bg-[#F9FAFB] border border-[#F2F2F2] hover:border-[#333333] rounded-[40px] md:p-10 p-6 flex md:flex-col flex-row items-center'
-              variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} transition={{ delay: 0.1 }} whileHover={{ scale: 1.1 }}>
+              variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} transition={{ delay: 0.1 }}>
               <div className='md:w-full w-1/2'>
                 <h3 className='md:text-[2rem] md:leading-[2.375rem] font-bold -tracking-[1.5px] text-[#171717] md:mt-10'>이용요금</h3>
                 <p className='md:text-[1rem] md:leading-[1.18rem] -tracking-[1.5px] font-normal text-[#333333] mt-5 md:block hidden'>기본서비스는 무료로 제공되어요.</p>
@@ -148,7 +148,7 @@ export default function Home() {
           </Link>
           <Link href="#">
             <motion.div className='bg-[#F9FAFB] border border-[#F2F2F2] hover:border-[#333333] rounded-[40px] md:p-10 p-6 flex md:flex-col flex-row items-center'
-              variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} transition={{ delay: 0.2 }} whileHover={{ scale: 1.1 }}>
+              variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} transition={{ delay: 0.2 }}>
               <div className='md:w-full w-1/2'>
                 <h3 className='md:text-[2rem] md:leading-[2.375rem] font-bold -tracking-[1.5px] text-[#171717] md:mt-10'>이용안내</h3>
                 <p className='md:text-[1rem] md:leading-[1.18rem] -tracking-[1.5px] font-normal text-[#333333] mt-5 md:block hidden'>궁금해하실 모든 내용을 담아봤어요.</p>
@@ -162,7 +162,7 @@ export default function Home() {
           </Link>
           <Link href="#">
             <motion.div className='bg-[#F9FAFB] border border-[#F2F2F2] hover:border-[#333333] rounded-[40px] md:p-10 p-6 flex md:flex-col flex-row items-center'
-              variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} transition={{ delay: 0.3 }} whileHover={{ scale: 1.1 }}>
+              variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} transition={{ delay: 0.3 }}>
               <div className='md:w-full w-1/2'>
                 <h3 className='md:text-[2rem] md:leading-[2.375rem] font-bold -tracking-[1.5px] text-[#171717] md:mt-10'>고객센터</h3>
                 <p className='md:text-[1rem] md:leading-[1.18rem] -tracking-[1.5px] font-normal text-[#333333] mt-5 md:block hidden'>어려운 점이 있으신가요?
