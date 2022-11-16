@@ -60,12 +60,12 @@ export default function Home() {
                   주문을 관리할수 있어요." />
             <Card image_path={Card2} title="누구든지, 쉽게 " content="트레이딩뷰와 연동하여 쉽고 편리하게
                   자동매매 가능한 프로그램을 제공해요." />
-            <Card image_path={Card3} title="시스템 트레이딩의 소통 놀이터로" content="사용자간의 피드백과 의견을 주고받을 수 있는 
+            <Card image_path={Card3} title="시스템 트레이딩의 <br/>소통 놀이터로" content="사용자간의 피드백과 의견을 주고받을 수 있는 
                   커뮤니티와 사용가능한 무료 시스템 전략을
                   받아보세요." />
-            <Card image_path={Card4} title="상위 퀀트 투자자들의 전략 분석 제공" content="퀀트로의 인증된 전문 전략가들의
+            <Card image_path={Card4} title="상위 퀀트 투자자들의 <br/> 전략 분석 제공" content="퀀트로의 인증된 전문 전략가들의
                   다양한 전략을 볼 수 있어요." />
-            <Card image_path={Card5} title="전문가가 코딩해주는 나만의 전략" content="사용자간의 피드백과 의견을 주고받을 수 있는 
+            <Card image_path={Card5} title="전문가가 코딩해주는 <br/> 나만의 전략" content="사용자간의 피드백과 의견을 주고받을 수 있는 
                   커뮤니티와 퀀트로 이용자라면 사용가능한
                   무료 시스템 전략을 제공합니다." />
             <Card image_path={Card6} title="PC,모바일 구애없이 언제 어디서나" content="한글/영문 언어지원과 달러/원화 단위변환 등
