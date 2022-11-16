@@ -1,18 +1,23 @@
 import Image from 'next/image';
+import { TextAnimation } from '../animation';
+import {motion} from 'framer-motion'
 
 export default function PostBox({ title, content, image_path,category }) {
     return (
         <div className='grid md:grid-cols-2 grid-cols-1 md:gap-24 gap-10'>
             <div>
-                <p className='md:text-[1.25rem] text-[1rem] md:leading-[1.6rem] -tracking-[1.5px] font-medium text-[#FF8B15]'>{category}</p>
-                <h3 className='md:text-[2.1rem] text-[1.25rem] md:leading-[2.75rem] font-bold -tracking-[1.5px] text-white mt-10'>
-                    {title}</h3>
-                <p className='md:text-[1.5rem] text-[0.875rem] md:leading-[2.25rem] -tracking-[1.5px] font-medium text-[#A5A5A5] mt-3'>
-                    {content}</p>
+                <motion.p className='md:text-[1.25rem] text-[1rem] md:leading-[1.6rem] -tracking-[1.5px] font-medium text-[#FF8B15]'
+                variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>{category}</motion.p>
+                <motion.h3 className='md:text-[2.1rem] text-[1.25rem] md:leading-[2.75rem] font-bold -tracking-[1.5px] text-white mt-10'
+                variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>
+                    {title}</motion.h3>
+                <motion.p className='md:text-[1.5rem] text-[0.875rem] md:leading-[2.25rem] -tracking-[1.5px] font-medium text-[#A5A5A5] mt-3'
+                variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>
+                    {content}</motion.p>
             </div>
-            <div>
+            <motion.div>
                 <Image src={image_path} alt="Image" className='rounded-[32px] w-full lg:max-w-[609px] hover:scale-105 transition ease-in-out delay-150'/>
-            </div>
+            </motion.div>
         </div>
     )
 }
