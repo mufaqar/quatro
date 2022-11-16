@@ -68,7 +68,7 @@ export default function Home() {
             <Card image_path={Card5} title="전문가가 코딩해주는 <br/> 나만의 전략" content="사용자간의 피드백과 의견을 주고받을 수 있는 
                   커뮤니티와 퀀트로 이용자라면 사용가능한
                   무료 시스템 전략을 제공합니다." />
-            <Card image_path={Card6} title="PC,모바일 구애없이 언제 어디서나" content="한글/영문 언어지원과 달러/원화 단위변환 등
+            <Card image_path={Card6} title="PC,모바일 구애없이 <br/> 언제 어디서나" content="한글/영문 언어지원과 달러/원화 단위변환 등
                   시스템 트레이딩을 위한 최적의 옵션을 제공하며
                   텔레그램을 통해 상세한 주문내역을 받아보세요." />
           </motion.div>
