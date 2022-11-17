@@ -36,7 +36,7 @@ export default function Home() {
 
       <section className='bg-gradient-to-b from-[#D8E0ED] py-20 md:px-auto px-6'>
         <div className='container mx-auto'>
-          <h2 className='text-transparent bg-clip-text bg-gradient-to-b from-[#5687CA] opacity-[8%] to-[#003F78] md:text-[5.75rem] text-[2rem] md:leading-[10.4rem] leading-[2.375rem] font-bold -tracking-[1.5px] text-center text-black/20'
+          <h2 className='text-transparent bg-clip-text bg-gradient-to-b from-[#5687CA] opacity-[8%] to-[#003F78] md:text-[5.75rem] text-[2rem] md:leading-[10.4rem] leading-[2.375rem] font-bold -tracking-[1.5px] text-center'
             variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>시스템 트레이딩의 진입장벽,</h2>
           <motion.p className='md:text-[3.25rem] text-[1.25rem] md:leading-[3.8rem] leading-[1.438rem] font-bold -tracking-[1.5px] text-center text-[#171717] mt-5'
             variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>퀀트로는 이렇게 낮췄어요.</motion.p>
