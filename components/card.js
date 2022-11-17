@@ -17,7 +17,7 @@ export default function Card({ title, content, image_path,image_Hover,TxtColour,
             <Image src={image_Hover} alt="Image Missing" className='object-cover w-full h-full rounded-[32px] hidden group-hover:block' />
             <div className='absolute bottom-12 md:px-14 px-8 w-full'>
                 <h3
-                    className={`md:text-[2.5rem] _heading mt-10 text-[1.5rem] md:leading-[3.1rem] leading-[1.875rem] -tracking-[1.5px] text-white group-hover:text-white/60  ${TxtColour && "text-center text-[#FFA4A5] w-full"}`}>
+                    className={`md:text-[2.5rem] _heading mt-10 text-[1.5rem] md:leading-[3.1rem] leading-[1.875rem] -tracking-[1.5px] text-white group-hover:text-[#FFA4A5]  ${TxtColour && "text-center text-[#FFA4A5] w-[75%]"}`}>
                     <div
                         className=""
                         dangerouslySetInnerHTML={{

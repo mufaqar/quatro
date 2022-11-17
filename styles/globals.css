@@ -50,3 +50,8 @@ bottom: 6rem;
 .card_wrapper:hover .last_item{
     bottom: -20px !important;
 }
+@media(max-width:768px){
+    .card_wrapper ._heading, ._text{
+        position: static;
+    }
+}
