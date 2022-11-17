@@ -7,6 +7,12 @@ import Graph from '../public/images/graph.png';
 import Clock from '../public/images/clock.png';
 import Card from '../components/card';
 import Card1 from '../public/images/card1.png';
+import Card1Hover from '../public/images/card1Hover.png';
+import Card2Hover from '../public/images/card2Hover.png';
+import Card3Hover from '../public/images/card3Hover.png';
+import Card4Hover from '../public/images/card4Hover.png';
+import Card5Hover from '../public/images/card5Hover.png';
+import Card6Hover from '../public/images/card6Hover.png';
 import Card2 from '../public/images/card2.png';
 import Card3 from '../public/images/card3.png';
 import Card4 from '../public/images/card4.png';
@@ -55,20 +61,20 @@ export default function Home() {
             </h1>
           </div>
           <motion.div className='grid gap-8' variants={TextAnimation} initial="offScreen" whileInView="onScreen" >
-            <Card image_path={Card1} title="모든 거래소를 <br/> 한번에 통합관리" content="바이낸스,바이빗,비트겟,업비트 등 
+            <Card image_path={Card1} image_Hover={Card1Hover} title="모든 거래소를 <br/> 한번에 통합관리" content="바이낸스,바이빗,비트겟,업비트 등 
                   국내외의 다양한 거래소를 통합하여 한곳에서 
                   주문을 관리할수 있어요." />
-            <Card image_path={Card2} title="누구든지, 쉽게 " content="트레이딩뷰와 연동하여 쉽고 편리하게
+            <Card image_path={Card2} image_Hover={Card2Hover} TxtColour="text-black text-center" title="누구든지, 쉽게 " content="트레이딩뷰와 연동하여 쉽고 편리하게
                   자동매매 가능한 프로그램을 제공해요." />
-            <Card image_path={Card3} title="시스템 트레이딩의 <br/>소통 놀이터로" content="사용자간의 피드백과 의견을 주고받을 수 있는 
+            <Card image_path={Card3} image_Hover={Card3Hover} title="시스템 트레이딩의 <br/>소통 놀이터로" content="사용자간의 피드백과 의견을 주고받을 수 있는 
                   커뮤니티와 사용가능한 무료 시스템 전략을
                   받아보세요." />
-            <Card image_path={Card4} title="상위 퀀트 투자자들의 <br/> 전략 분석 제공" content="퀀트로의 인증된 전문 전략가들의
+            <Card image_path={Card4} image_Hover={Card4Hover} title="상위 퀀트 투자자들의 <br/> 전략 분석 제공" content="퀀트로의 인증된 전문 전략가들의
                   다양한 전략을 볼 수 있어요." />
-            <Card image_path={Card5} title="전문가가 코딩해주는 <br/> 나만의 전략" content="사용자간의 피드백과 의견을 주고받을 수 있는 
+            <Card image_path={Card5} image_Hover={Card5Hover} title="전문가가 코딩해주는 <br/> 나만의 전략" content="사용자간의 피드백과 의견을 주고받을 수 있는 
                   커뮤니티와 퀀트로 이용자라면 사용가능한
                   무료 시스템 전략을 제공합니다." />
-            <Card image_path={Card6} title="PC,모바일 구애없이 <br/>언제 어디서나" content="한글/영문 언어지원과 달러/원화 단위변환 등
+            <Card image_path={Card6} image_Hover={Card6Hover} title="PC,모바일 구애없이 <br/>언제 어디서나" content="한글/영문 언어지원과 달러/원화 단위변환 등
                   시스템 트레이딩을 위한 최적의 옵션을 제공하며
                   텔레그램을 통해 상세한 주문내역을 받아보세요." />
           </motion.div>

@@ -24,3 +24,29 @@ h3,h4,h5,h6,h2,h1{
 p{
     font-family: PretendardLight;
 }
+
+.card_wrapper{
+    overflow: hidden;
+}
+.card_wrapper ._heading{
+    position: absolute;
+    bottom: 0rem;
+    transition: .5s ease-in-out;
+}
+
+.card_wrapper:hover ._heading{
+bottom: 6rem;
+}
+
+._text{
+    position: absolute;
+    bottom: -10rem;
+    transition: .5s ease-in-out;
+    max-width: 320px;
+}
+.card_wrapper:hover ._text{
+    bottom: 0;
+}
+.card_wrapper:hover .last_item{
+    bottom: -20px !important;
+}
