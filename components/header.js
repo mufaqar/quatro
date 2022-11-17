@@ -7,6 +7,23 @@ import Logo from '../public/images/logo.png';
 function Header() {
   const [navbar, setNavbar] = useState(false);
 
+  const [headerClr, setHeaderClr] = useState(false);
+
+  const changeBackground = () => {
+      if (window.scrollY >= 80) {
+        setHeaderClr(true);
+      }
+      else {
+        setHeaderClr(false);
+      }
+  }
+  if (typeof window !== "undefined") {
+
+      window.addEventListener('scroll', changeBackground);
+
+  }
+
+
   return (
     <>
       <Head>
@@ -14,7 +31,8 @@ function Header() {
         <link rel="shortcut icon" href="favicon.png" />
       </Head>
       <header>
-        <nav className="w-full fixed z-50">
+        <nav className={`w-full fixed z-50 ${headerClr ? 'bg-white/50 backdrop-blur-sm' : 'backdrop-blur-none bg-transparent'
+                }`}>
           <div className="justify-between container mx-auto px-5 md:items-center md:flex">
             <div>
               <div className="flex items-center justify-between py-3 md:py-5 md:block">
