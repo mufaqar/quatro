@@ -43,6 +43,7 @@ bottom: 6rem;
     bottom: -10rem;
     transition: .5s ease-in-out;
     max-width: 320px;
+    text-align: left;
 }
 .card_wrapper:hover ._text{
     bottom: 0;
@@ -50,6 +51,7 @@ bottom: 6rem;
 .card_wrapper:hover .last_item{
     bottom: -20px !important;
 }
+
 @media(max-width:768px){
     .card_wrapper ._heading, ._text{
         position: static;
