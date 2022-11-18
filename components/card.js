@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { SlideUpAnimation, TextAnimation } from '../animation';
 
 
-export default function Card({ title, content, image_path,image_Hover,TxtColour, TitlColor, _delay }) {
+export default function Card({ title, content, image_path, Mbl_image, image_Hover,TxtColour, TitlColor, _delay }) {
     const [hover, setHover] = useState(false)
     const handleHover = () => {
         setHover(true)
@@ -13,7 +13,8 @@ export default function Card({ title, content, image_path,image_Hover,TxtColour,
     return (
         <motion.div className='rounded-[32px] relative group transition-all card_wrapper' onMouseEnter={handleHover}
             variants={SlideUpAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} transition={{ delay: _delay }}>
-            <Image src={image_path} alt="Image Missing" className='object-cover w-full h-full rounded-[32px] block group-hover:hidden' />
+            <Image src={image_path} alt="Image Missing" className='object-cover w-full h-full md:block hidden rounded-[32px] group-hover:hidden' />
+            <Image src={Mbl_image} alt="Image Missing" className='object-cover w-full h-full md:hidden block rounded-[32px] group-hover:hidden' />
             <Image src={image_Hover} alt="Image Missing" className='object-cover w-full h-full rounded-[32px] hidden group-hover:block' />
             <div className='absolute bottom-12 md:px-14 px-8 w-full'>
                 <h3

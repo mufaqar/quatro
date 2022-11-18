@@ -8,14 +8,14 @@ export default function HeroSection() {
   return (
     <section className='bg-[#D8E0ED] md:pt-28 md:pb-16 py-20 md:bg-[url("/images/hero_img.png")] bg-no-repeat bg-contain bg-right'>
       <div className="container mx-auto flex md:flex-row flex-col items-center">
-        <div className="md:w-2/3 w-full md:pl-32 md:px-auto px-6 ">
+        <div className="md:w-2/3 w-full md:px-auto px-6 ">
           <motion.h1
             className="md:text-[3.75rem] text-[2rem] md:leading-[5.25rem] leading-[2.75rem] font-bold -tracking-[1.5px] text-[#171717] md:text-start text-center"
             variants={TextAnimation}
             initial="offScreen"
             whileInView="onScreen"
             viewport={{ once: true, amount: 0.1 }}
-            
+
           >
             시스템 트레이딩,<br></br>
             진입장벽을 낮추다.
@@ -26,17 +26,17 @@ export default function HeroSection() {
             initial="offScreen"
             whileInView="onScreen"
             viewport={{ once: true, delay: 12 }}
-            transition={{delay:.3}}
+            transition={{ delay: .3 }}
           >
             트레이딩은 퀀트로에 맡기고, 이젠 일상을 즐기세요.
           </motion.p>
           <div className="mt-12 gap-5 flex md:flex-row flex-col md:px-auto px-6 ">
             <motion.button variants={ZoomAnimation}
-            initial="offScreen"
-            whileInView="onScreen"
-            viewport={{ once: true, amount: 0.1 }}
-            transition={{delay:.4}}
-            
+              initial="offScreen"
+              whileInView="onScreen"
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{ delay: .4 }}
+              className={`md:mb-auto mb-5`}
             >
               <Link
                 href="/"
@@ -46,11 +46,11 @@ export default function HeroSection() {
               </Link>
             </motion.button>
             <motion.button variants={ZoomAnimation}
-            initial="offScreen"
-            whileInView="onScreen"
-            viewport={{ once: true, amount: 0.1, delay: 2 }}
-            transition={{delay:.5}}
-            
+              initial="offScreen"
+              whileInView="onScreen"
+              viewport={{ once: true, amount: 0.1, delay: 2 }}
+              transition={{ delay: .5 }}
+              className={`md:mb-auto mb-5`}
             >
               <Link
                 href="mailto:help@quantro.net"

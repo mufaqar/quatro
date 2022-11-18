@@ -31,7 +31,7 @@ function Header() {
         <link rel="shortcut icon" href="favicon.png" />
       </Head>
       <header>
-        <nav className={`w-full fixed z-50 ${headerClr ? 'bg-white/50 backdrop-blur-sm' : 'backdrop-blur-none bg-transparent'
+        <nav className={`w-full fixed z-50 ${headerClr ? 'bg-white/70 backdrop-blur-sm' : 'backdrop-blur-none bg-transparent'
                 }`}>
           <div className="justify-between container mx-auto px-5 md:items-center md:flex">
             <div>
