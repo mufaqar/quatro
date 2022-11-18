@@ -92,11 +92,11 @@ export default function Home(_delay) {
               <Image src={Card2Hover} alt="Image Missing" className='object-cover w-full h-full rounded-[32px] hidden group-hover:block' />
               <div className='absolute bottom-8 md:px-12 px-8 w-full'>
                 <h3
-                  className={`md:text-[2.5rem] _heading mt-10 text-[1.5rem] text-center md:leading-[3.1rem] leading-[1.875rem] -tracking-[1.5px] text-[#FFA4A5] group-hover:text-[#FFA4A5] `}>
+                  className={`md:text-[2.5rem] w-[100%] _heading mt-10 text-[1.5rem] mx-auto text-center md:-ml-[3rem] md:leading-[3.1rem] leading-[1.875rem] -tracking-[1.5px] text-[#FFA4A5] group-hover:text-[#FFA4A5] `}>
                   누구든지, 쉽게</h3>
 
                 <p variants={TextAnimation} initial="offScreen" whileInView="onScreen" transition={{ duration: 0.1 }}
-                  className={`md:text-[1.25rem] _text text-[0.9rem] text-center transition-all md:leading-[1.6rem] leading-[1.2rem] -tracking-[1.5px] font-medium mt-4 text-black `}>
+                  className={`md:text-[1.25rem] mx-auto _text text-[0.9rem] text-center transition-all md:leading-[1.6rem] leading-[1.2rem] -tracking-[1.5px] font-medium mt-4 text-black `}>
                   트레이딩뷰와 연동하여 쉽고 편리하게
                   자동매매 가능한 프로그램을 제공해요.</p>
               </div>
