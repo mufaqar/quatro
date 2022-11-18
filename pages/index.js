@@ -79,7 +79,7 @@ export default function Home(_delay) {
                   한번에 통합관리</h3>
 
                 <p variants={TextAnimation} initial="offScreen" whileInView="onScreen" transition={{ duration: 0.1 }}
-                  className={`md:text-[1.25rem] _text text-[0.9rem] transition-all md:leading-[1.6rem] leading-[1.2rem] -tracking-[1.5px] font-medium mt-4 text-white group-hover:last_item'`}>
+                  className={`md:text-[1.25rem] _text text-[0.9rem] left-1/2 transform -translate-x-1/2 transition-all md:leading-[1.6rem] leading-[1.2rem] -tracking-[1.5px] font-medium mt-4 text-white group-hover:last_item'`}>
                   바이낸스,바이빗,비트겟,업비트 등
                   국내외의 다양한 거래소를 통합하여 한곳에서
                   주문을 관리할수 있어요.</p>
