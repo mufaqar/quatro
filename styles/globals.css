@@ -43,10 +43,13 @@ bottom: 6rem;
     bottom: -10rem;
     transition: .5s ease-in-out;
     max-width: 333px;
+
+}
+._text-left{
+    
     width: 100%;
     left: 50%;
     transform: translatex( -50%);
-
 }
 .card_wrapper:hover ._text{
     bottom: 0;
@@ -88,5 +91,8 @@ bottom: 4rem;
     }
     .card_wrapper1 ._heading, ._text{
         position: static;
+    }
+    ._text-left {
+        transform: none;
     }
 }
