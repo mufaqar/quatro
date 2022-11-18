@@ -40,7 +40,7 @@ export default function Home(_delay) {
     <>
       <HeroSection />
 
-      <section className='bg-gradient-to-b from-[#D8E0ED] py-20 md:px-auto px-6'>
+      <section className='bg-gradient-to-b from-[#D8E0ED] md:pt-20 pt-10 pb-14 md:px-auto px-6'>
         <div className='container mx-auto'>
           <h2 className='text-transparent bg-clip-text bg-gradient-to-b from-[#5687CA] opacity-[8%] to-[#003F78] md:text-[5.75rem] text-[2rem] md:leading-[10.4rem] leading-[2.375rem] font-bold -tracking-[1.5px] text-center'
             variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }}>시스템 트레이딩의 진입장벽,</h2>

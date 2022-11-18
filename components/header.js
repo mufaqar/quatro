@@ -33,9 +33,9 @@ function Header() {
       <header>
         <nav className={`w-full fixed z-50 ${headerClr ? 'bg-white/70 backdrop-blur-sm' : 'backdrop-blur-none bg-transparent'
                 }`}>
-          <div className="justify-between container mx-auto px-5 md:items-center md:flex">
+          <div className="justify-between md:px-16 px-6 py-6 md:py-6 md:items-center md:flex">
             <div>
-              <div className="flex items-center justify-between py-3 md:py-5 md:block">
+              <div className="flex items-center justify-between md:block">
                 <Link href="/">
                   <Image src={Logo} alt="Logo" />
                 </Link>

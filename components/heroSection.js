@@ -1,75 +1,84 @@
 import Image from "next/image";
 import Link from "next/link";
-import HeroImage from "../public/images/mbl_hero.png";
+import Mbl_hero from "../public/images/mbl_hero.png";
+import HeroImage from "../public/images/hero_img.png";
 import { motion } from "framer-motion";
 import { TextAnimation, ZoomAnimation } from "../animation";
 
 export default function HeroSection() {
   return (
-    <section className='bg-[#D8E0ED] md:pt-28 md:pb-16 py-20 md:bg-[url("/images/hero_img.png")] bg-no-repeat bg-contain bg-right'>
-      <div className="container mx-auto flex md:flex-row flex-col items-center">
-        <div className="md:w-2/3 w-full md:px-auto px-6 ">
-          <motion.h1
-            className="md:text-[3.75rem] text-[2rem] md:leading-[5.25rem] leading-[2.75rem] font-bold -tracking-[1.5px] text-[#171717] md:text-start text-center"
-            variants={TextAnimation}
-            initial="offScreen"
-            whileInView="onScreen"
-            viewport={{ once: true, amount: 0.1 }}
-
-          >
-            시스템 트레이딩,<br></br>
-            진입장벽을 낮추다.
-          </motion.h1>
-          <motion.p
-            className="md:text-[1.5rem] text-[0.875rem] md:leading-[1.905rem] leading-[1.063rem] font-normal text-[#525A68] md:text-start text-center mt-6"
-            variants={TextAnimation}
-            initial="offScreen"
-            whileInView="onScreen"
-            viewport={{ once: true, delay: 12 }}
-            transition={{ delay: .3 }}
-          >
-            트레이딩은 퀀트로에 맡기고, 이젠 일상을 즐기세요.
-          </motion.p>
-          <div className="mt-12 gap-5 flex md:flex-row flex-col md:px-auto px-6 ">
-            <motion.button variants={ZoomAnimation}
+    <section className='bg-[#D8E0ED] relative md:pt-28 md:pb-16 py-20 '>
+      <div>
+        <div className="container mx-auto flex md:flex-row flex-col items-center">
+          <div className="w-full md:px-auto px-6 ">
+            <motion.h1
+              className="md:text-[3.75rem] text-[2rem] md:leading-[5.25rem] leading-[2.75rem] font-bold -tracking-[1.5px] text-[#171717] md:text-start text-center"
+              variants={TextAnimation}
               initial="offScreen"
               whileInView="onScreen"
               viewport={{ once: true, amount: 0.1 }}
-              transition={{ delay: .4 }}
-              className={`md:mb-auto mb-5`}
+
             >
-              <Link
-                href="/"
-                className="bg-[#F39200] hover:bg-[#E1740F] w-fit md:mx-0 mx-auto border-2 border-[#F39200] hover:border-[#E1740F] px-5 py-2 rounded-full md:text-[1.25rem] text-[1rem] md:leading-[1.5rem] font-bold text-white"
-              >
-                퀀트로 바로가기
-              </Link>
-            </motion.button>
-            <motion.button variants={ZoomAnimation}
+              시스템 트레이딩,<br></br>
+              진입장벽을 낮추다.
+            </motion.h1>
+            <motion.p
+              className="md:text-[1.5rem] text-[0.875rem] md:leading-[1.905rem] leading-[1.063rem] font-normal text-[#525A68] md:text-start text-center mt-6"
+              variants={TextAnimation}
               initial="offScreen"
               whileInView="onScreen"
-              viewport={{ once: true, amount: 0.1, delay: 2 }}
-              transition={{ delay: .5 }}
-              className={`md:mb-auto mb-5`}
+              viewport={{ once: true, delay: 12 }}
+              transition={{ delay: .3 }}
             >
-              <Link
-                href="mailto:help@quantro.net"
-                className="bg-transparent w-fit md:mx-0 mx-auto border-2 border-black/10 hover:border-black/50 px-5 py-2 rounded-full md:text-[1.25rem] text-[1rem] md:leading-[1.5rem] font-bold text-[#171717] "
+              트레이딩은 퀀트로에 맡기고, 이젠 일상을 즐기세요.
+            </motion.p>
+            <div className="mt-12 gap-5 flex md:flex-row flex-col md:px-auto px-6 ">
+              <motion.button variants={ZoomAnimation}
+                initial="offScreen"
+                whileInView="onScreen"
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{ delay: .4 }}
+                className={`md:mb-auto mb-5`}
               >
-                이용안내
-              </Link>
-            </motion.button>
+                <Link
+                  href="/"
+                  className="bg-[#F39200] hover:bg-[#E1740F] w-fit md:mx-0 mx-auto border-2 border-[#F39200] hover:border-[#E1740F] px-5 py-2 rounded-full md:text-[1.25rem] text-[1rem] md:leading-[1.5rem] font-bold text-white"
+                >
+                  퀀트로 바로가기
+                </Link>
+              </motion.button>
+              <motion.button variants={ZoomAnimation}
+                initial="offScreen"
+                whileInView="onScreen"
+                viewport={{ once: true, amount: 0.1, delay: 2 }}
+                transition={{ delay: .5 }}
+                className={`md:mb-auto mb-5`}
+              >
+                <Link
+                  href="mailto:help@quantro.net"
+                  className="bg-transparent w-fit md:mx-0 mx-auto border-2 border-black/10 hover:border-black/50 px-5 py-2 rounded-full md:text-[1.25rem] text-[1rem] md:leading-[1.5rem] font-bold text-[#171717] "
+                >
+                  이용안내
+                </Link>
+              </motion.button>
+            </div>
+          </div>
+          <div className="w-full">
+
+            <Image
+              src={Mbl_hero}
+              alt="Hero Image"
+              className="md:hidden block w-full"
+            />
           </div>
         </div>
-        <div className="md:w-1/3 w-full">
-          <Image
-            src={HeroImage}
-            alt="Hero Image"
-            className="md:hidden block w-full"
-          />
-        </div>
+        <Image
+          src={HeroImage}
+          alt="Hero Image"
+          className="md:block hidden absolute top-0 right-0 max-w-[60%]"
+        />
       </div>
-      <div className="relative mt-5">
+      <div className="relative md:mt-[18rem]">
         <Link href="/#investment" className="mt-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
