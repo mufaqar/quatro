@@ -79,7 +79,7 @@ export default function HeroSection() {
         />
       </div>
       <div className="relative md:mt-[18rem]">
-        <Link href="/#investment" className="mt-10">
+        <Link href="/#investment" className="mt-10 md:block hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
