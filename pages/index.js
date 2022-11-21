@@ -75,7 +75,7 @@ export default function Home(_delay) {
               <Image src={Card1Hover} alt="Image Missing" className='object-cover w-full h-full rounded-[32px] hidden md:group-hover:block' />
               <div className='absolute bottom-8 md:px-12 px-8 w-full'>
                 <h3
-                  className={`md:text-[2.5rem] _heading mt-10 text-[1.5rem] md:leading-[3.1rem] leading-[1.875rem] text-white group-hover:text-white/70 `}>
+                  className={`md:text-[2.5rem] _heading mt-10 text-[1.5rem] md:leading-[3.1rem] leading-[1.875rem] text-white md:group-hover:text-white/70 `}>
                   모든 거래소를<br></br>
                   한번에 통합관리</h3>
 
@@ -109,7 +109,7 @@ export default function Home(_delay) {
               <Image src={Card3Hover} alt="Image Missing" className='object-cover w-full h-full rounded-[32px] hidden md:group-hover:block' />
               <div className='absolute bottom-8 md:px-12 px-8 w-full'>
                 <h3
-                  className={`md:text-[2.5rem] _heading mt-10 text-[1.5rem] md:leading-[3.1rem] leading-[1.875rem] text-white group-hover:text-white/70  `}>
+                  className={`md:text-[2.5rem] _heading mt-10 text-[1.5rem] md:leading-[3.1rem] leading-[1.875rem] text-white md:group-hover:text-white/70  `}>
                   시스템 트레이딩의 <br></br>
                   소통 놀이터로</h3>
 
@@ -127,7 +127,7 @@ export default function Home(_delay) {
               <Image src={Card4Hover} alt="Image Missing" className='object-cover w-full h-full rounded-[32px] hidden md:group-hover:block' />
               <div className='absolute bottom-8 md:px-12 px-8 w-full'>
                 <h3
-                  className={`md:text-[2.5rem] _heading mt-10 text-[1.5rem] md:leading-[3.1rem] leading-[1.875rem] text-white group-hover:text-white/70  `}>
+                  className={`md:text-[2.5rem] _heading mt-10 text-[1.5rem] md:leading-[3.1rem] leading-[1.875rem] text-white md:group-hover:text-white/70  `}>
                   상위 퀀트 투자자들의<br></br>
                   전략 분석 제공
                 </h3>
@@ -165,7 +165,7 @@ export default function Home(_delay) {
               <Image src={Card6Hover} alt="Image Missing" className='object-cover w-full h-full rounded-[32px] hidden md:group-hover:block' />
               <div className='absolute bottom-8 md:px-12 px-8 w-full'>
                 <h3
-                  className={`md:text-[2.5rem] _heading mt-10 text-[1.5rem] md:leading-[3.1rem] leading-[1.875rem] text-white group-hover:text-white/70  `}>
+                  className={`md:text-[2.5rem] _heading mt-10 text-[1.5rem] md:leading-[3.1rem] leading-[1.875rem] text-white md:group-hover:text-white/70  `}>
                   PC,모바일 구애없이<br></br>
                   언제 어디서나</h3>
 
