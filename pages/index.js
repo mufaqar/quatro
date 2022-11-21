@@ -71,8 +71,8 @@ export default function Home(_delay) {
             <motion.div className='rounded-[32px] relative group transition-all card_wrapper '
               variants={TextAnimation} initial="onScreen" whileInView="onffcreen" viewport={{ once: true, amount: 0.1 }} transition={{ delay: _delay }}>
               <Image src={Card1} alt="Image Missing" className='object-cover  w-full h-full md:block hidden rounded-[32px] group-hover:hidden' />
-              <Image src={card1_mbl} alt="Image Missing" className='object-cover w-full h-full md:hidden block rounded-[32px] group-hover:hidden' />
-              <Image src={Card1Hover} alt="Image Missing" className='object-cover w-full h-full rounded-[32px] hidden group-hover:block' />
+              <Image src={card1_mbl} alt="Image Missing" className='object-cover w-full h-full md:hidden block rounded-[32px] md:group-hover:hidden' />
+              <Image src={Card1Hover} alt="Image Missing" className='object-cover w-full h-full rounded-[32px] hidden md:group-hover:block' />
               <div className='absolute bottom-8 md:px-12 px-8 w-full'>
                 <h3
                   className={`md:text-[2.5rem] _heading mt-10 text-[1.5rem] md:leading-[3.1rem] leading-[1.875rem] -tracking-[1.5px] text-white group-hover:text-white/70 `}>
@@ -89,8 +89,8 @@ export default function Home(_delay) {
             <motion.div className='rounded-[32px] relative group transition-all card_wrapper1'
               variants={TextAnimation} initial="onScreen" whileInView="onffcreen" viewport={{ once: true, amount: 0.1 }} transition={{ delay: _delay }}>
               <Image src={Card2} alt="Image Missing" className='object-cover  w-full h-full md:block hidden rounded-[32px] group-hover:hidden' />
-              <Image src={card2_mbl} alt="Image Missing" className='object-cover w-full h-full md:hidden block rounded-[32px] group-hover:hidden' />
-              <Image src={Card2Hover} alt="Image Missing" className='object-cover w-full h-full rounded-[32px] hidden group-hover:block' />
+              <Image src={card2_mbl} alt="Image Missing" className='object-cover w-full h-full md:hidden block rounded-[32px] md:group-hover:hidden' />
+              <Image src={Card2Hover} alt="Image Missing" className='object-cover w-full h-full rounded-[32px] hidden md:group-hover:block' />
               <div className='absolute bottom-8 md:px-12 px-8 w-full'>
                 <h3
                   className={`md:text-[2.5rem] w-[100%] _heading mt-10 text-[1.5rem] mx-auto text-center md:-ml-[3rem] md:leading-[3.1rem] leading-[1.875rem] -tracking-[1.5px] text-[#FFA4A5] group-hover:text-[#FFA4A5] `}>
@@ -105,8 +105,8 @@ export default function Home(_delay) {
             <motion.div className='rounded-[32px] relative group transition-all card_wrapper '
               variants={TextAnimation} initial="onScreen" whileInView="onffcreen" viewport={{ once: true, amount: 0.1 }} transition={{ delay: _delay }}>
               <Image src={Card3} alt="Image Missing" className='object-cover  w-full h-full md:block hidden rounded-[32px] group-hover:hidden' />
-              <Image src={card3_mbl} alt="Image Missing" className='object-cover w-full h-full md:hidden block rounded-[32px] group-hover:hidden' />
-              <Image src={Card3Hover} alt="Image Missing" className='object-cover w-full h-full rounded-[32px] hidden group-hover:block' />
+              <Image src={card3_mbl} alt="Image Missing" className='object-cover w-full h-full md:hidden block rounded-[32px] md:group-hover:hidden' />
+              <Image src={Card3Hover} alt="Image Missing" className='object-cover w-full h-full rounded-[32px] hidden md:group-hover:block' />
               <div className='absolute bottom-8 md:px-12 px-8 w-full'>
                 <h3
                   className={`md:text-[2.5rem] _heading mt-10 text-[1.5rem] md:leading-[3.1rem] leading-[1.875rem] -tracking-[1.5px] text-white  `}>
@@ -123,8 +123,8 @@ export default function Home(_delay) {
             <motion.div className='rounded-[32px] relative group transition-all card_wrapper1 '
               variants={TextAnimation} initial="onScreen" whileInView="onffcreen" viewport={{ once: true, amount: 0.1 }} transition={{ delay: _delay }}>
               <Image src={Card4} alt="Image Missing" className='object-cover  w-full h-full md:block hidden rounded-[32px] group-hover:hidden' />
-              <Image src={card4_mbl} alt="Image Missing" className='object-cover w-full h-full md:hidden block rounded-[32px] group-hover:hidden' />
-              <Image src={Card4Hover} alt="Image Missing" className='object-cover w-full h-full rounded-[32px] hidden group-hover:block' />
+              <Image src={card4_mbl} alt="Image Missing" className='object-cover w-full h-full md:hidden block rounded-[32px] md:group-hover:hidden' />
+              <Image src={Card4Hover} alt="Image Missing" className='object-cover w-full h-full rounded-[32px] hidden md:group-hover:block' />
               <div className='absolute bottom-8 md:px-12 px-8 w-full'>
                 <h3
                   className={`md:text-[2.5rem] _heading mt-10 text-[1.5rem] md:leading-[3.1rem] leading-[1.875rem] -tracking-[1.5px] text-white  `}>
@@ -142,8 +142,8 @@ export default function Home(_delay) {
             <motion.div className='rounded-[32px] relative group transition-all card_wrapper '
               variants={TextAnimation} initial="onScreen" whileInView="onffcreen" viewport={{ once: true, amount: 0.1 }} transition={{ delay: _delay }}>
               <Image src={Card5} alt="Image Missing" className='object-cover  w-full h-full md:block hidden rounded-[32px] group-hover:hidden' />
-              <Image src={card5_mbl} alt="Image Missing" className='object-cover w-full h-full md:hidden block rounded-[32px] group-hover:hidden' />
-              <Image src={Card5Hover} alt="Image Missing" className='object-cover w-full h-full rounded-[32px] hidden group-hover:block' />
+              <Image src={card5_mbl} alt="Image Missing" className='object-cover w-full h-full md:hidden block rounded-[32px] md:group-hover:hidden' />
+              <Image src={Card5Hover} alt="Image Missing" className='object-cover w-full h-full rounded-[32px] hidden md:group-hover:block' />
               <div className='absolute bottom-8 md:px-12 px-8 w-full'>
                 <h3
                   className={`md:text-[2.5rem] _heading mt-10 text-[1.5rem] md:leading-[3.1rem] leading-[1.875rem] -tracking-[1.5px] text-black  `}>
@@ -161,8 +161,8 @@ export default function Home(_delay) {
             <motion.div className='rounded-[32px] relative group transition-all card_wrapper '
               variants={TextAnimation} initial="onScreen" whileInView="onffcreen" viewport={{ once: true, amount: 0.1 }} transition={{ delay: _delay }}>
               <Image src={Card6} alt="Image Missing" className='object-cover  w-full h-full md:block hidden rounded-[32px] group-hover:hidden' />
-              <Image src={card6_mbl} alt="Image Missing" className='object-cover w-full h-full md:hidden block rounded-[32px] group-hover:hidden' />
-              <Image src={Card6Hover} alt="Image Missing" className='object-cover w-full h-full rounded-[32px] hidden group-hover:block' />
+              <Image src={card6_mbl} alt="Image Missing" className='object-cover w-full h-full md:hidden block rounded-[32px] md:group-hover:hidden' />
+              <Image src={Card6Hover} alt="Image Missing" className='object-cover w-full h-full rounded-[32px] hidden md:group-hover:block' />
               <div className='absolute bottom-8 md:px-12 px-8 w-full'>
                 <h3
                   className={`md:text-[2.5rem] _heading mt-10 text-[1.5rem] md:leading-[3.1rem] leading-[1.875rem] -tracking-[1.5px] text-white  `}>

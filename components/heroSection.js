@@ -49,8 +49,8 @@ export default function HeroSection() {
                 <Link
                   href="/"
                 >
-                  <Image src={Btn_yellow} alt='Image' className="group-hover:hidden block mx-auto" />
-                  <Image src={Btn_yellowHover} alt='Image' className="group-hover:block hidden mx-auto" />
+                  <Image src={Btn_yellow} alt='Image' className="md:group-hover:hidden block mx-auto" />
+                  <Image src={Btn_yellowHover} alt='Image' className="md:group-hover:block hidden mx-auto" />
                 </Link>
               </motion.button>
               <motion.button variants={ZoomAnimation}
