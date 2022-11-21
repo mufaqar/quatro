@@ -22,7 +22,7 @@ h3,h4,h5,h6,h2,h1{
     font-family: PretendardBold !important;
 }
 p{
-    font-family: PretendardLight;
+    font-family: PretendardReg;
 }
 
 .card_wrapper{
@@ -82,6 +82,9 @@ bottom: 4rem;
 }
 .card_wrapper1:hover .last_item{
     bottom: -20px !important;
+}
+.container{
+    max-width: 1240px;
 }
 
 
