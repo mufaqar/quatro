@@ -238,43 +238,43 @@ export default function Home(_delay) {
         </div>
         <motion.div className='container mx-auto grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-7 md:pt-20 pt-8 '>
           <Link href="#">
-            <motion.div className='bg-[#F9FAFB] border border-[#F2F2F2] hover:border-[#333333] rounded-[40px] md:p-10 p-6 flex md:flex-col flex-row items-center'
+            <motion.div className='bg-[#F9FAFB] border border-[#F2F2F2] hover:border-[#333333] md:rounded-[40px] rounded-[16px] md:p-10 p-6 flex md:flex-col flex-row items-center'
               variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} transition={{ delay: 0.1 }}>
               <div className='md:w-full w-1/2'>
                 <h3 className='md:text-[2rem] md:leading-[2.375rem] font-bold -tracking-[1.5px] text-[#171717] md:mt-10'>이용요금</h3>
                 <p className='md:text-[1rem] md:leading-[1.18rem] -tracking-[1.5px] font-normal text-[#333333] mt-5 md:block hidden'>기본서비스는 무료로 제공되어요.</p>
               </div>
-              <p className='md:w-full w-1/2 md:text-[1.25rem] text-[0.875rem] md:leading-[1.43rem] leading-[1rem] font-medium -tracking-[1.5px] text-[#909090] flex items-center gap-3 md:mt-12'>이용권 등록 바로가기
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-4 h-4">
+              <p className='md:w-full w-1/2 md:text-[1.25rem] text-[0.875rem] md:leading-[1.43rem] leading-[1rem] font-medium -tracking-[1.5px] text-[#909090] flex items-center md:justify-start justify-end md:mt-12'>이용권 등록 바로가기
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-4 h-4 ml-5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                 </svg>
               </p>
             </motion.div>
           </Link>
           <Link href="#">
-            <motion.div className='bg-[#F9FAFB] border border-[#F2F2F2] hover:border-[#333333] rounded-[40px] md:p-10 p-6 flex md:flex-col flex-row items-center'
+            <motion.div className='bg-[#F9FAFB] border border-[#F2F2F2] hover:border-[#333333] md:rounded-[40px] rounded-[16px] md:p-10 p-6 flex md:flex-col flex-row items-center'
               variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} transition={{ delay: 0.2 }}>
               <div className='md:w-full w-1/2'>
                 <h3 className='md:text-[2rem] md:leading-[2.375rem] font-bold -tracking-[1.5px] text-[#171717] md:mt-10'>이용안내</h3>
                 <p className='md:text-[1rem] md:leading-[1.18rem] -tracking-[1.5px] font-normal text-[#333333] mt-5 md:block hidden'>궁금해하실 모든 내용을 담아봤어요.</p>
               </div>
-              <p className='md:w-full w-1/2 md:text-[1.25rem] text-[0.875rem] md:leading-[1.43rem] leading-[1rem] font-medium -tracking-[1.5px] text-[#909090] flex items-center gap-3 md:mt-12'>이용안내 바로가기
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-4 h-4">
+              <p className='md:w-full w-1/2 md:text-[1.25rem] text-[0.875rem] md:leading-[1.43rem] leading-[1rem] font-medium -tracking-[1.5px] text-[#909090] flex items-center md:justify-start justify-end md:mt-12'>이용안내 바로가기
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-4 h-4 ml-5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                 </svg>
               </p>
             </motion.div>
           </Link>
           <Link href="#">
-            <motion.div className='bg-[#F9FAFB] border border-[#F2F2F2] hover:border-[#333333] rounded-[40px] md:p-10 p-6 flex md:flex-col flex-row items-center'
+            <motion.div className='bg-[#F9FAFB] border border-[#F2F2F2] hover:border-[#333333] md:rounded-[40px] rounded-[16px] md:p-10 p-6 flex md:flex-col flex-row items-center'
               variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} transition={{ delay: 0.3 }}>
               <div className='md:w-full w-1/2'>
                 <h3 className='md:text-[2rem] md:leading-[2.375rem] font-bold -tracking-[1.5px] text-[#171717] md:mt-10'>고객센터</h3>
                 <p className='md:text-[1rem] md:leading-[1.18rem] -tracking-[1.5px] font-normal text-[#333333] mt-5 md:block hidden'>어려운 점이 있으신가요?
                   퀀트로 고객센터로 문의주세요.</p>
               </div>
-              <p className='md:w-full w-1/2 md:text-[1.25rem] text-[0.875rem] md:leading-[1.43rem] leading-[1rem] font-medium -tracking-[1.5px] text-[#909090] flex items-center gap-3 md:mt-12'>1:1문의 바로가기
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-4 h-4">
+              <p className='md:w-full w-1/2 md:text-[1.25rem] text-[0.875rem] md:leading-[1.43rem] leading-[1rem] font-medium -tracking-[1.5px] text-[#909090] flex items-center md:justify-start justify-end md:mt-12'>1:1문의 바로가기
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-4 h-4 ml-5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                 </svg>
               </p>
