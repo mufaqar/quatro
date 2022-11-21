@@ -104,10 +104,10 @@ export default function HeroSection() {
         <Link
           href="https://pf.kakao.com/_dynxfxj"
           target="_blank"
-          className="fixed bottom-20 right-5 text-[1rem] leading-[1.1rem] z-50 group transition-all"
+          className="fixed bottom-20 right-5 z-50 group transition-all"
         >
-          <Image src={Chat} alt='Image' className="group-hover:hidden block" />
-          <Image src={Chat_hover} alt='Image' className="group-hover:block hidden" />
+          <Image src={Chat} alt='Image' className="group-hover:hidden block max-w-[72px]" />
+          <Image src={Chat_hover} alt='Image' className="group-hover:block hidden max-w-[72px]" />
         </Link>
       </div>
     </section>
