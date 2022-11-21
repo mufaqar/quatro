@@ -81,7 +81,7 @@ export default function HeroSection() {
         <Image
           src={HeroImage}
           alt="Hero Image"
-          className="md:block hidden absolute top-0 right-0 max-w-[60%]"
+          className="md:block hidden absolute top-0 right-0 max-w-[70%]"
         />
       </div>
       <div className="relative md:mt-[18rem]">
