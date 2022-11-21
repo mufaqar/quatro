@@ -10,8 +10,8 @@ export default function ServiceBox({ image_path, title, content, _delay }) {
                 <Image src={image_path} alt="Code Image" className={`rounded-full m-auto`} />
             </div>
             <div className='md:w-full w-4/5'>
-                <h3 className='md:text-[2rem] text-[1rem] md:leading-[2.3rem] font-bold -tracking-[1.5px] md:text-center text-start text-[#171717] md:mt-10 mt-0'>{title}</h3>
-                <p className='md:text-[1.125rem] text-[0.9rem] md:leading-[1.5rem] -tracking-[1.5px] font-medium text-[#868686] md:text-center text-start md:mt-5 mt-2'>{content}</p>
+                <h3 className='md:text-[2rem] text-[1rem] md:leading-[2.3rem] font-bold md:text-center text-start text-[#171717] md:mt-10 mt-0'>{title}</h3>
+                <p className='md:text-[1.125rem] text-[0.9rem] md:leading-[1.5rem] font-medium text-[#868686] md:text-center text-start md:mt-5 mt-2'>{content}</p>
             </div>
         </motion.div>
     )

@@ -18,7 +18,7 @@ export default function HeroSection() {
         <div className="container mx-auto flex md:flex-row flex-col items-center">
           <div className="w-full md:px-auto px-6 pt-[9rem]">
             <motion.h1
-              className="md:text-[3.75rem] text-[2rem] md:leading-[5.25rem] leading-[2.75rem] font-bold -tracking-[1.5px] text-[#171717] md:text-start text-center"
+              className="md:text-[3.75rem] text-[2rem] md:leading-[5.25rem] leading-[2.75rem] font-bold text-[#171717] md:text-start text-center"
               variants={TextAnimation}
               initial="offScreen"
               whileInView="onScreen"

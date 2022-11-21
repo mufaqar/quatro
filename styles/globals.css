@@ -83,6 +83,32 @@ bottom: 4rem;
 .card_wrapper1:hover .last_item{
     bottom: -20px !important;
 }
+
+.card_wrapper_last{
+    overflow: hidden;
+}
+.card_wrapper_last ._heading{
+    position: absolute;
+    bottom: 0rem;
+    transition: .5s ease-in-out;
+}
+
+.card_wrapper_last:hover ._heading{
+bottom: 7rem;
+}
+
+._text{
+    position: absolute;
+    bottom: -10rem;
+    transition: .5s ease-in-out;
+    max-width: 333px;
+}
+.card_wrapper_last:hover ._text{
+    bottom: 0;
+}
+.card_wrapper_last:hover .last_item{
+    bottom: -20px !important;
+}
 .container{
     max-width: 1240px;
 }
@@ -93,6 +119,9 @@ bottom: 4rem;
         position: static;
     }
     .card_wrapper1 ._heading, ._text{
+        position: static;
+    }
+    .card_wrapper_last ._heading, ._text{
         position: static;
     }
     ._text-left {
