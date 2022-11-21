@@ -6,6 +6,8 @@ import Btn_yellow from "../public/images/btn_yellow.png";
 import Btn_transp from "../public/images/btn_transp.png";
 import Btn_yellowHover from "../public/images/btn_yellowHover.png";
 import Btn_transpHover from "../public/images/btn_transHover.png";
+import Btn_yellowMbl from "../public/images/btn_yellMbl.png";
+import Btn_transMbl from "../public/images/btn_transMbl.png";
 import Chat from "../public/images/chat.png";
 import Chat_hover from "../public/images/chat_hover.png";
 import { motion } from "framer-motion";
@@ -16,7 +18,7 @@ export default function HeroSection() {
     <section className='bg-[#D8E0ED] relative md:pt-28 md:pb-16 py-20 '>
       <div>
         <div className="container mx-auto flex md:flex-row flex-col items-center">
-          <div className="w-full md:px-auto px-6 pt-[9rem]">
+          <div className="w-full md:px-auto px-6 md:pt-[9rem] pt-[5.625rem]">
             <motion.h1
               className="md:text-[3.75rem] text-[2rem] md:leading-[5.25rem] leading-[2.75rem] font-bold text-[#171717] md:text-start text-center"
               variants={TextAnimation}
@@ -38,7 +40,7 @@ export default function HeroSection() {
             >
               트레이딩은 퀀트로에 맡기고, 이젠 일상을 즐기세요.
             </motion.p>
-            <div className="mt-12 mb-5 gap-5 flex md:flex-row flex-col md:px-0 px-6 ">
+            <div className="md:mt-12 mt-8 mb-5 md:gap-5 gap-2 flex md:flex-row flex-col md:px-0 px-6 ">
               <motion.button variants={ZoomAnimation}
                 initial="offScreen"
                 whileInView="onScreen"
@@ -49,8 +51,9 @@ export default function HeroSection() {
                 <Link
                   href="/"
                 >
-                  <Image src={Btn_yellow} alt='Image' className="md:group-hover:hidden block mx-auto" />
+                  <Image src={Btn_yellow} alt='Image' className="md:group-hover:hidden md:block hidden mx-auto" />
                   <Image src={Btn_yellowHover} alt='Image' className="md:group-hover:block hidden mx-auto" />
+                  <Image src={Btn_yellowMbl} alt='Image' className="md:hidden mx-auto" />
                 </Link>
               </motion.button>
               <motion.button variants={ZoomAnimation}
@@ -63,8 +66,9 @@ export default function HeroSection() {
                 <Link
                   href="mailto:help@quantro.net"
                 >
-                  <Image src={Btn_transp} alt='Image' className="group-hover:hidden block mx-auto" />
-                  <Image src={Btn_transpHover} alt='Image' className="group-hover:block hidden mx-auto" />
+                  <Image src={Btn_transp} alt='Image' className="md:group-hover:hidden md:block hidden mx-auto" />
+                  <Image src={Btn_transpHover} alt='Image' className="md:group-hover:block hidden mx-auto" />
+                  <Image src={Btn_transMbl} alt='Image' className="md:hidden mx-auto" />
                 </Link>
               </motion.button>
             </div>
