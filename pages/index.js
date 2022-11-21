@@ -51,8 +51,8 @@ export default function Home(_delay) {
         <div className='container mx-auto grid md:grid-cols-3 grid-cols-1 gap-8 mt-12'>
           <ServiceBox image_path={Group1} title="코딩 걱정 없이" content="자동매매를 하고 싶지만, 코딩이 걱정이라면? 전략 아이디어만 있다면 나만의 전략은 퀀트로에서 실현 시킬 수 있어요." _delay="0.1" />
           <ServiceBox image_path={Group2} title="전략 걱정 없이" _delay="0.2" content="퀀트로가 직접 분석하고 인증한 
-                상위 퀀트 투자자들의 
-                다양한 전략을 받아보세요."/>
+상위 퀀트 투자자들의 
+다양한 전략을 받아보세요."/>
           <ServiceBox image_path={Group3} title="시간 걱정 없이" _delay="0.3" content="이제 내가 원하는 타점에서
                 자동 매매될 수 있도록 시스템에 맡기고
                 소중한 시간을 아끼세요."/>

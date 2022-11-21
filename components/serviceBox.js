@@ -4,7 +4,7 @@ import { TextAnimation } from '../animation'
 
 export default function ServiceBox({ image_path, title, content, _delay }) {
     return (
-        <motion.div className='bg-white md:rounded-[32px] rounded-[16px] md:py-12 py-6 md:px-[76px] px-4 flex md:flex-col flex-row gap-3 items-center'
+        <motion.div className='bg-white md:rounded-[32px] rounded-[16px] md:py-12 py-6 md:px-[43px] px-4 flex md:flex-col flex-row gap-3 items-center'
         variants={TextAnimation} initial="offScreen" whileInView="onScreen" viewport={{ once: true, amount: 0.1 }} transition={{delay: _delay}} >
             <div className='md:w-full w-1/5 flex items-center'>
                 <Image src={image_path} alt="Code Image" className={`rounded-full m-auto`} />
