@@ -188,6 +188,7 @@ export default function Home(_delay) {
         </div>
         <div className='container mx-auto grid gap-14 mt-10'>
           <PostBox image_path={Blog1} title="국내외 최상위 개발진들과 협업하여 분산주문 시스템 구축" content="많은 주문횟수와 성공적인 주문연결을 최우선으로 하며 사용자가 자동매매 서비스를 이용하는데 불편함이 없도록 하고있어요." category="하나" />
+          <div className='h-[1px] w-full bg-[#3A3A3A] '></div>
           <PostBox image_path={Blog2} title="암호화된 알고리즘 보관시스템으로 사용자 데이터 보호" content="퀀트로는 사용자의 데이터를 절대적으로 중요하게 생각하며 그 어떠한 위험에도 노출되지 않도록 최선을 다하고 있어요." category="둘" />
         </div>
 
