@@ -438,7 +438,7 @@ export default function Home(_delay) {
           whileInView="onScreen"
           viewport={{ once: true }}
         >
-          <h1 className={` _boxHeading absolute top-1/2 transform -translate-y-1/2 text-[2rem]  leading-[2.75rem] font-bold text-[#F9FAFB] text-start ${inView ? 'text-white text-[60px]  md:leading-[5.25rem]' : 'text-[#5E5E5E] text-[120px] leading-[120px]'}`}>
+          <h1 className={` _boxHeading absolute top-1/2 transform -translate-y-1/2 text-[2rem]  leading-[2.75rem] font-bold text-[#F9FAFB] text-start ${inView ? 'text-white text-[60px]  md:leading-[5.25rem]' : 'text-[#5E5E5E] md:text-[120px] md:leading-[120px]'}`}>
             퀀트투자,<br></br>
             편리함에 전략을 더해
           </h1>
