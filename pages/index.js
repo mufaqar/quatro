@@ -78,7 +78,7 @@ export default function Home(_delay) {
 
   const ImageSlide = {
     onScreen: {
-      y : inViewMbl ? '0' : '-12rem',
+      y : inViewMbl ? '-0rem' : '-12rem',
       scale : inViewMbl ? 1 : .2,
       x : inViewMbl ? 1 : '7rem',
       transition:{
@@ -86,7 +86,7 @@ export default function Home(_delay) {
       }
     },
     offScreen: {
-     
+      
     },
   };
 
