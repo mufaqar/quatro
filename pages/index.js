@@ -61,6 +61,8 @@ export default function Home(_delay) {
   const Text = {
     onScreen: {
       y: inView ? "5rem" : "26rem",
+      scale: inView ? 1 : 2,
+      x: inView ? "0" : "40rem",
     },
     offScreen: {
       y: "26rem",
@@ -436,7 +438,7 @@ export default function Home(_delay) {
           whileInView="onScreen"
           viewport={{ once: true }}
         >
-          <h1 className="md:text-[3.75rem] _boxHeading absolute top-1/2 transform -translate-y-1/2 text-[2rem] md:leading-[5.25rem] leading-[2.75rem] font-bold text-[#F9FAFB] text-start">
+          <h1 className={`md:text-[3.75rem] _boxHeading absolute top-1/2 transform -translate-y-1/2 text-[2rem] md:leading-[5.25rem] leading-[2.75rem] font-bold text-[#F9FAFB] text-start ${inView ? 'text-white' : 'text-[#5E5E5E]'}`}>
             퀀트투자,<br></br>
             편리함에 전략을 더해
           </h1>
