@@ -183,3 +183,16 @@ bottom: 7rem;
     from   { width: 100%;}
     to {width: 0px;}
   }
+
+  @media(max-width:768px){
+    ._hidden{
+        display: none !important;
+    }
+    ._boxHeading{
+        margin-top: -3rem;
+    }
+    ._boxWrapper{
+        margin-top: -5rem;
+       
+    }
+  }

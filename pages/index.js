@@ -436,13 +436,13 @@ export default function Home(_delay) {
           whileInView="onScreen"
           viewport={{ once: true }}
         >
-          <h1 className="md:text-[3.75rem] absolute top-1/2 transform -translate-y-1/2 text-[2rem] md:leading-[5.25rem] leading-[2.75rem] font-bold text-[#F9FAFB] text-start">
+          <h1 className="md:text-[3.75rem] _boxHeading absolute top-1/2 transform -translate-y-1/2 text-[2rem] md:leading-[5.25rem] leading-[2.75rem] font-bold text-[#F9FAFB] text-start">
             퀀트투자,<br></br>
             편리함에 전략을 더해
           </h1>
         </motion.div>
         <motion.div
-          className={`container mx-auto  gap-14 mt-10 ${
+          className={`container mx-auto  gap-14 mt-10 _boxWrapper ${
             inView ? box && "grid" : "hidden"
           }`}
           variants={Box}
@@ -658,7 +658,7 @@ export default function Home(_delay) {
             </div>
           </div>
         </div>
-        <motion.figure className="absolute -right-5 -top-16 "
+        <motion.figure className="absolute -right-5 -top-16 _hidden md:block "
           variants={ImageSlide} initial="offScreen" animate="onScreen" viewport={{ once: false, amount: 0.1 }}
         >
           <Image src='/images/bgMbl.png' alt="mobile" height={600} width={500}/>
