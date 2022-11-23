@@ -544,7 +544,7 @@ export default function Home(_delay) {
             variants={TextAnimation}
             initial="offScreen"
             whileInView="onScreen"
-            viewport={{ once: true, amount: 0.1 }}
+            viewport={{ once: false, amount: 0.1 }}
             transition={{ delay: 0.4 }}
           >
             거래소 통합주문 플랫폼
@@ -554,7 +554,7 @@ export default function Home(_delay) {
             variants={TextAnimation}
             initial="offScreen"
             whileInView="onScreen"
-            viewport={{ once: true, amount: 0.1 }}
+            viewport={{ once: false, amount: 0.1 }}
             transition={{ delay: 0.8 }}
           >
             퀀트로, 간편하게 시작해보세요.
@@ -563,7 +563,7 @@ export default function Home(_delay) {
             variants={TextAnimation}
             initial="offScreen"
             whileInView="onScreen"
-            viewport={{ once: true, amount: 0.1 }}
+            viewport={{ once: false, amount: 0.1 }}
             transition={{ delay: 1 }}
           >
             <Link
@@ -579,7 +579,7 @@ export default function Home(_delay) {
             variants={TextAnimation}
             initial="offScreen"
             whileInView="onScreen"
-            viewport={{ once: true, amount: 0.1 }}
+            viewport={{ once: false, amount: 0.1 }}
             transition={{ delay: 1.2 }}
           >
             <figure
@@ -617,7 +617,7 @@ export default function Home(_delay) {
           variants={TextAnimation}
             initial="offScreen"
             whileInView="onScreen"
-            viewport={{ once: true, amount: 0.1 }}
+            viewport={{ once: false, amount: 0.1 }}
             transition={{ delay: 1.4 }}
           >
             <figure
@@ -655,7 +655,7 @@ export default function Home(_delay) {
           variants={TextAnimation}
             initial="offScreen"
             whileInView="onScreen"
-            viewport={{ once: true, amount: 0.1 }}
+            viewport={{ once: false, amount: 0.1 }}
             transition={{ delay: 1.6 }}
           >
             <figure
