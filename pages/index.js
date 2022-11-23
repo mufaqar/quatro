@@ -545,7 +545,7 @@ export default function Home(_delay) {
             initial="offScreen"
             whileInView="onScreen"
             viewport={{ once: true, amount: 0.1 }}
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 0.4 }}
           >
             거래소 통합주문 플랫폼
           </motion.h3>
@@ -555,7 +555,7 @@ export default function Home(_delay) {
             initial="offScreen"
             whileInView="onScreen"
             viewport={{ once: true, amount: 0.1 }}
-            transition={{ delay: 0.9 }}
+            transition={{ delay: 0.8 }}
           >
             퀀트로, 간편하게 시작해보세요.
           </motion.h3>
@@ -564,7 +564,7 @@ export default function Home(_delay) {
             initial="offScreen"
             whileInView="onScreen"
             viewport={{ once: true, amount: 0.1 }}
-            transition={{ delay: 1.2 }}
+            transition={{ delay: 1 }}
           >
             <Link
               href="#"
@@ -580,7 +580,7 @@ export default function Home(_delay) {
             initial="offScreen"
             whileInView="onScreen"
             viewport={{ once: true, amount: 0.1 }}
-            transition={{ delay: 1.5 }}
+            transition={{ delay: 1.2 }}
           >
             <figure
               variants={ZoomAnimation}
@@ -618,7 +618,7 @@ export default function Home(_delay) {
             initial="offScreen"
             whileInView="onScreen"
             viewport={{ once: true, amount: 0.1 }}
-            transition={{ delay: 1.8 }}
+            transition={{ delay: 1.4 }}
           >
             <figure
               variants={ZoomAnimation}
@@ -656,7 +656,7 @@ export default function Home(_delay) {
             initial="offScreen"
             whileInView="onScreen"
             viewport={{ once: true, amount: 0.1 }}
-            transition={{ delay: 2 }}
+            transition={{ delay: 1.6 }}
           >
             <figure
               iants={ZoomAnimation}
