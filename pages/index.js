@@ -80,20 +80,15 @@ export default function Home(_delay) {
 
   const ImageSlide = {
     onScreen: {
-      y : inViewMbl ? '-0rem' : '-12rem',
-      scale : inViewMbl ? 1 : .2,
-      x : inViewMbl ? 1 : '7rem',
-      transition:{
-        duration: .5
-      }
+      y: inViewMbl ? "-0rem" : "-12rem",
+      scale: inViewMbl ? 1 : 0.2,
+      x: inViewMbl ? 1 : "7rem",
+      transition: {
+        duration: 0.5,
+      },
     },
-    offScreen: {
-      
-    },
+    offScreen: {},
   };
-
-
-
 
   return (
     <>
@@ -438,7 +433,13 @@ export default function Home(_delay) {
           whileInView="onScreen"
           viewport={{ once: true }}
         >
-          <h1 className={` _boxHeading absolute top-1/2 transform -translate-y-1/2 text-[2rem]  leading-[2.75rem] font-bold text-[#F9FAFB] text-start ${inView ? 'text-white text-[60px]  md:leading-[5.25rem]' : 'text-[#5E5E5E] md:text-[120px] md:leading-[120px]'}`}>
+          <h1
+            className={` _boxHeading absolute top-1/2 transform -translate-y-1/2 text-[2rem]  leading-[2.75rem] font-bold text-[#F9FAFB] text-start ${
+              inView
+                ? "text-white text-[60px]  md:leading-[5.25rem]"
+                : "text-[#5E5E5E] md:text-[120px] md:leading-[120px]"
+            }`}
+          >
             퀀트투자,<br></br>
             편리함에 전략을 더해
           </h1>
@@ -531,7 +532,7 @@ export default function Home(_delay) {
           </motion.div>
         </motion.div>
         <div
-          className="min-h-[5px] w-full absolute bg-transparent left-0 top-3/4"
+          className="min-h-[5px] w-full absolute bg-transparent left-0 top-5/6"
           ref={ref}
         ></div>
       </section>
@@ -544,6 +545,7 @@ export default function Home(_delay) {
             initial="offScreen"
             whileInView="onScreen"
             viewport={{ once: true, amount: 0.1 }}
+            transition={{ delay: 0.5 }}
           >
             거래소 통합주문 플랫폼
           </motion.h3>
@@ -553,18 +555,33 @@ export default function Home(_delay) {
             initial="offScreen"
             whileInView="onScreen"
             viewport={{ once: true, amount: 0.1 }}
+            transition={{ delay: 0.9 }}
           >
             퀀트로, 간편하게 시작해보세요.
           </motion.h3>
-          <Link
-            href="#"
-            className="bg-[#F39200] hover:bg-[#E1740F] text-white w-fit mx-auto border-2 border-[#F39200] hover:border-[#E1740F] px-5 py-2 rounded-full md:text-[1.25rem] md:leading-[1.5rem] font-bold"
+          <motion.button
+            variants={TextAnimation}
+            initial="offScreen"
+            whileInView="onScreen"
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ delay: 1.2 }}
           >
-            이용권 등록 바로가기
-          </Link>
+            <Link
+              href="#"
+              className="bg-[#F39200] hover:bg-[#E1740F] text-white w-fit mx-auto border-2 border-[#F39200] hover:border-[#E1740F] px-5 py-2 rounded-full md:text-[1.25rem] md:leading-[1.5rem] font-bold"
+            >
+              이용권 등록 바로가기
+            </Link>
+          </motion.button>
         </div>
         <div className="container mx-auto grid md:grid-cols-3 grid-cols-1 gap-14 md:pt-20 pt-16 ">
-          <div className="md:p-8 p-4">
+          <motion.div className="md:p-8 p-4"
+            variants={TextAnimation}
+            initial="offScreen"
+            whileInView="onScreen"
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ delay: 1.5 }}
+          >
             <figure
               variants={ZoomAnimation}
               initial="offScreen"
@@ -595,8 +612,14 @@ export default function Home(_delay) {
                 전략가들이 검증한 시스템트레이딩 전략을 쉽고 간편하게 이용가능
               </motion.p>
             </div>
-          </div>
-          <div className="md:p-8 p-4">
+          </motion.div>
+          <motion.div className="md:p-8 p-4"
+          variants={TextAnimation}
+            initial="offScreen"
+            whileInView="onScreen"
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ delay: 1.8 }}
+          >
             <figure
               variants={ZoomAnimation}
               initial="offScreen"
@@ -627,8 +650,14 @@ export default function Home(_delay) {
                 제작 제공
               </motion.p>
             </div>
-          </div>
-          <div className="md:p-8 p-4 z-10">
+          </motion.div>
+          <motion.div className="md:p-8 p-4 z-10"
+          variants={TextAnimation}
+            initial="offScreen"
+            whileInView="onScreen"
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ delay: 2 }}
+          >
             <figure
               iants={ZoomAnimation}
               initial="offScreen"
@@ -658,12 +687,21 @@ export default function Home(_delay) {
                 시스템트레이더 간 전략 아이디어 교류를 위한 소통의 장
               </motion.p>
             </div>
-          </div>
+          </motion.div>
         </div>
-        <motion.figure className="absolute -right-5 -top-16 _hidden md:block "
-          variants={ImageSlide} initial="offScreen" animate="onScreen" viewport={{ once: false, amount: 0.1 }}
+        <motion.figure
+          className="absolute -right-5 -top-16 _hidden md:block "
+          variants={ImageSlide}
+          initial="offScreen"
+          animate="onScreen"
+          viewport={{ once: false, amount: 0.1 }}
         >
-          <Image src='/images/bgMbl.png' alt="mobile" height={600} width={500}/>
+          <Image
+            src="/images/bgMbl.png"
+            alt="mobile"
+            height={600}
+            width={500}
+          />
         </motion.figure>
       </section>
 
