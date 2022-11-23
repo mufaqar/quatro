@@ -542,7 +542,7 @@ export default function Home(_delay) {
         <div className="container mx-auto text-center ">
           
             <motion.h3
-            className="md:text-[3.75rem] text-[1.5rem] md:leading-[5.25rem] leading-[1.875rem] font-light text-center text-[#171717]"
+            className="md:text-[3.75rem] z-20 relative text-[1.5rem] md:leading-[5.25rem] leading-[1.875rem] font-light text-center text-[#171717]"
             variants={width >= '768' ? TextAnimation : ''}
             initial={'offScreen'}
             whileInView={ 'onScreen'}
@@ -552,7 +552,7 @@ export default function Home(_delay) {
             거래소 통합주문 플랫폼
           </motion.h3>
           <motion.h3
-            className="md:text-[3.75rem] z-20 text-[1.75rem] md:leading-[5.25rem] leading-[2.1rem] font-bold text-center text-[#171717] mt-5 mb-10"
+            className="md:text-[3.75rem] z-20 text-[1.75rem] md:leading-[5.25rem] relative leading-[2.1rem] font-bold text-center text-[#171717] mt-5 mb-10"
             variants={width >= '768' ? TextAnimation : ''}
             initial="offScreen"
             whileInView="onScreen"
@@ -562,6 +562,7 @@ export default function Home(_delay) {
             퀀트로, 간편하게 시작해보세요.
           </motion.h3>
           <motion.button
+          className="relative z-20"
             variants={width >= '768' ? TextAnimation : ''}
             initial="offScreen"
             whileInView="onScreen"
