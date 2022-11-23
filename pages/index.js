@@ -23,6 +23,7 @@ import Card3Hover from "../public/images/card3Hover.png";
 import Card4Hover from "../public/images/card4Hover.png";
 import Card5Hover from "../public/images/card5Hover.png";
 import Card6Hover from "../public/images/card6Hover.png";
+import BoxBtn from '../public/images/_btn_box.png'
 import PostBox from "../components/postBox";
 import Blog1 from "../public/images/blog1.png";
 import Blog2 from "../public/images/blog2.png";
@@ -549,7 +550,7 @@ export default function Home(_delay) {
             거래소 통합주문 플랫폼
           </motion.h3>
           <motion.h3
-            className="md:text-[3.75rem] text-[1.75rem] md:leading-[5.25rem] leading-[2.1rem] font-bold text-center text-[#171717] mt-5 mb-10"
+            className="md:text-[3.75rem] z-20 text-[1.75rem] md:leading-[5.25rem] leading-[2.1rem] font-bold text-center text-[#171717] mt-5 mb-10"
             variants={width >= '768' ? TextAnimation : ''}
             initial="offScreen"
             whileInView="onScreen"
@@ -565,12 +566,17 @@ export default function Home(_delay) {
             viewport={{ once: false, amount: 0.1 }}
             transition={{ delay: 1 }}
           >
-            <Link
+            {/*<Link
               href="#"
               className="bg-[#F39200] hover:bg-[#E1740F] text-white w-fit mx-auto border-2 border-[#F39200] hover:border-[#E1740F] px-5 py-2 rounded-full md:text-[1.25rem] md:leading-[1.5rem] font-bold"
             >
               이용권 등록 바로가기
-            </Link>
+          </Link> */}
+
+          <Link href="/">
+            <Image src={BoxBtn} alt="btn" width={196} height={52}></Image>
+          </Link>
+
           </motion.button>
         </div>
         <div className="container mx-auto grid md:grid-cols-3 grid-cols-1 gap-14 md:pt-20 pt-16 ">
