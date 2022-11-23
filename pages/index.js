@@ -182,7 +182,7 @@ export default function Home(_delay) {
                 src={Card1}
                 alt="Image Missing"
                 className="object-cover  w-full h-full md:block hidden rounded-[32px] group-hover:hidden"
-                priority
+                priority="true"
               />
               <Image
                 src={card1_mbl}
@@ -193,6 +193,8 @@ export default function Home(_delay) {
                 src={Card1Hover}
                 alt="Image Missing"
                 className="object-cover w-full h-full rounded-[32px] hidden md:group-hover:block"
+                placeholder="blur"
+                priority="true"
               />
               <div className="absolute bottom-8 md:px-12 px-8 w-full">
                 <h3
@@ -226,7 +228,8 @@ export default function Home(_delay) {
                 src={Card2}
                 alt="Image Missing"
                 className="object-cover  w-full h-full md:block hidden rounded-[32px] group-hover:hidden"
-                priority
+                placeholder="blur"
+                priority="true"
               />
               <Image
                 src={card2_mbl}
@@ -237,6 +240,8 @@ export default function Home(_delay) {
                 src={Card2Hover}
                 alt="Image Missing"
                 className="object-cover w-full h-full rounded-[32px] hidden md:group-hover:block"
+                placeholder="blur"
+                priority="true"
               />
               <div className="absolute bottom-8 md:px-12 px-8 w-full">
                 <h3
@@ -280,6 +285,8 @@ export default function Home(_delay) {
                 src={Card3Hover}
                 alt="Image Missing"
                 className="object-cover w-full h-full rounded-[32px] hidden md:group-hover:block"
+                placeholder="blur"
+                priority="true"
               />
               <div className="absolute bottom-8 md:px-12 px-8 w-full">
                 <h3
@@ -324,6 +331,8 @@ export default function Home(_delay) {
                 src={Card4Hover}
                 alt="Image Missing"
                 className="object-cover w-full h-full rounded-[32px] hidden md:group-hover:block"
+                placeholder="blur"
+                priority="true"
               />
               <div className="absolute bottom-8 md:px-12 px-8 w-full">
                 <h3
@@ -367,6 +376,8 @@ export default function Home(_delay) {
                 src={Card5Hover}
                 alt="Image Missing"
                 className="object-cover w-full h-full rounded-[32px] hidden md:group-hover:block"
+                placeholder="blur"
+                priority="true"
               />
               <div className="absolute bottom-8 md:px-12 px-8 w-full">
                 <h3
@@ -411,6 +422,8 @@ export default function Home(_delay) {
                 src={Card6Hover}
                 alt="Image Missing"
                 className="object-cover w-full h-full rounded-[32px] hidden md:group-hover:block"
+                placeholder="blur"
+                priority="true"
               />
               <div className="absolute bottom-8 md:px-12 px-8 w-full">
                 <h3
