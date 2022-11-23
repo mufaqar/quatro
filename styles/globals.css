@@ -128,7 +128,13 @@ bottom: 7rem;
         transform: none;
     }
 }
-
+.margin-top-0{
+    margin-top: 0 !important;
+    color: white !important;
+}
+._show{
+    display: block !important;
+}
 
 
 
@@ -192,7 +198,7 @@ bottom: 7rem;
         margin-top: -3rem;
     }
     ._boxWrapper{
-        margin-top: -5rem;
-       
+        margin-top: 0rem;
+       display: block !important;
     }
   }

@@ -41,11 +41,14 @@ import {
 } from "../animation";
 import { useInView } from "react-hook-inview";
 import { useEffect, useRef, useState } from "react";
+import useWindowDimensions from '../hooks/useWindowDimensions'
 
 export default function Home(_delay) {
   const [ref, inView] = useInView();
+  const [refEx, inViewEx] = useInView();
   const [mblRef, inViewMbl] = useInView();
   const [box, setBox] = useState(false);
+  const { height, width } = useWindowDimensions();
 
   useEffect(() => {
     if (inView) {
@@ -93,7 +96,7 @@ export default function Home(_delay) {
   return (
     <>
       <HeroSection />
-
+      
       <section className="bg-gradient-to-b from-[#D8E0ED] md:pt-20 pt-10 pb-14 md:px-auto px-6 min-h-[1000px]">
         <div className="w-full group:">
           <Image
@@ -425,16 +428,16 @@ export default function Home(_delay) {
         </div>
       </section>
 
-      <section className="py-20 bg-[#333333] relative md:px-auto px-6 min-h-[1000px] overflow-hidden">
+      <section className="pt-20 pb-10 md:py-20 bg-[#333333] relative md:px-auto px-6 min-h-[1000px] overflow-hidden">
         <motion.div
           className="container mx-auto"
-          variants={Text}
+          variants={width >= '768' ? Text : ''}
           initial="offScreen"
           whileInView="onScreen"
           viewport={{ once: true }}
         >
           <h1
-            className={` _boxHeading absolute top-1/2 transform -translate-y-1/2 text-[2rem]  leading-[2.75rem] font-bold text-[#F9FAFB] text-start ${
+            className={` _boxHeading ${width >= '768' ? 'absolute top-1/2 transform -translate-y-1/2' : 'text-[32px] margin-top-0' } text-[2rem]  leading-[2.75rem] font-bold text-[#F9FAFB] text-start ${
               inView
                 ? "text-white text-[60px]  md:leading-[5.25rem]"
                 : "text-[#5E5E5E] md:text-[120px] md:leading-[120px]"
@@ -445,19 +448,17 @@ export default function Home(_delay) {
           </h1>
         </motion.div>
         <motion.div
-          className={`container mx-auto  gap-14 mt-10 _boxWrapper ${
-            inView ? box && "grid" : "hidden"
-          }`}
-          variants={Box}
+          className={`container mx-auto  gap-14 mt-10 _boxWrapper  ${ inView ? box && "grid" : 'hidden' }`}
+          variants={width >= '768' ? Box : ''}
           initial="offScreen"
           animate="onScreen"
         >
           {/*  Box One */}
-          <motion.div className="grid md:grid-cols-2 grid-cols-1 md:gap-24 gap-5 py-10">
+          <div className="grid md:grid-cols-2 grid-cols-1 md:gap-24 gap-5 py-10">
             <div>
               <motion.h6
                 className="md:text-[1.25rem] text-[1rem] md:leading-[1.6rem] font-medium text-[#FF8B15] "
-                variants={BoxTextAnimation}
+                variants={width >= '768' && BoxTextAnimation}
                 initial="offScreen"
                 whileInView="onScreen"
               >
@@ -466,7 +467,7 @@ export default function Home(_delay) {
 
               <motion.h3
                 className="md:text-[2.1rem] text-[1.25rem] md:leading-[2.75rem] font-bold text-white md:mt-9 mt-5 "
-                variants={BoxTextAnimation}
+                variants={width >= '768' && BoxTextAnimation}
                 initial="offScreen"
                 whileInView="onScreen"
               >
@@ -475,7 +476,7 @@ export default function Home(_delay) {
 
               <motion.p
                 className="md:text-[1.5rem] text-[0.875rem] md:leading-[2.25rem] font-medium text-[#A5A5A5] mt-3"
-                variants={BoxTextAnimation}
+                variants={width >= '768' && BoxTextAnimation}
                 initial="offScreen"
                 whileInView="onScreen"
                 viewport={{ once: true, amount: 0.1 }}
@@ -490,7 +491,7 @@ export default function Home(_delay) {
                 className="rounded-[32px] w-full lg:max-w-[609px]"
               />
             </div>
-          </motion.div>
+          </div>
 
           <div className="h-[1px] w-full bg-[#3A3A3A]"></div>
 
@@ -499,7 +500,7 @@ export default function Home(_delay) {
             <div>
               <motion.h6
                 className="md:text-[1.25rem] text-[1rem] md:leading-[1.6rem] font-medium text-[#FF8B15]"
-                variants={BoxTextAnimation}
+                variants={width >= '768' && BoxTextAnimation}
                 initial="offScreen"
                 whileInView="onScreen"
               >
@@ -507,7 +508,7 @@ export default function Home(_delay) {
               </motion.h6>
               <motion.h3
                 className="md:text-[2.1rem] text-[1.25rem] md:leading-[2.75rem] font-bold text-white md:mt-9 mt-5"
-                variants={BoxTextAnimation}
+                variants={ width >= '768' && BoxTextAnimation}
                 initial="offScreen"
                 whileInView="onScreen"
               >
@@ -515,7 +516,7 @@ export default function Home(_delay) {
               </motion.h3>
               <motion.p
                 className="md:text-[1.5rem] text-[0.875rem] md:leading-[2.25rem] font-medium text-[#A5A5A5] mt-3"
-                variants={BoxTextAnimation}
+                variants={width >= '768' && BoxTextAnimation}
                 initial="offScreen"
                 whileInView="onScreen"
               >
@@ -531,19 +532,17 @@ export default function Home(_delay) {
             </div>
           </motion.div>
         </motion.div>
-        <div
-          className="min-h-[5px] w-full absolute bg-transparent left-0 top-5/6"
-          ref={ref}
-        ></div>
+        <div className="min-h-[5px] w-full absolute bg-transparent left-0 top-5/6" ref={ width >= '768' ? ref : refEx} ></div>
       </section>
 
       <section className="py-20 md:px-auto px-6 bg-[#F9FAFB] relative  bg-contain bg-no-repeat bg-right overflow-hidden">
         <div className="container mx-auto text-center ">
-          <motion.h3
+          
+            <motion.h3
             className="md:text-[3.75rem] text-[1.5rem] md:leading-[5.25rem] leading-[1.875rem] font-light text-center text-[#171717]"
-            variants={TextAnimation}
-            initial="offScreen"
-            whileInView="onScreen"
+            variants={width >= '768' ? TextAnimation : ''}
+            initial={'offScreen'}
+            whileInView={ 'onScreen'}
             viewport={{ once: false, amount: 0.1 }}
             transition={{ delay: 0.4 }}
           >
@@ -551,7 +550,7 @@ export default function Home(_delay) {
           </motion.h3>
           <motion.h3
             className="md:text-[3.75rem] text-[1.75rem] md:leading-[5.25rem] leading-[2.1rem] font-bold text-center text-[#171717] mt-5 mb-10"
-            variants={TextAnimation}
+            variants={width >= '768' ? TextAnimation : ''}
             initial="offScreen"
             whileInView="onScreen"
             viewport={{ once: false, amount: 0.1 }}
@@ -560,7 +559,7 @@ export default function Home(_delay) {
             퀀트로, 간편하게 시작해보세요.
           </motion.h3>
           <motion.button
-            variants={TextAnimation}
+            variants={width >= '768' ? TextAnimation : ''}
             initial="offScreen"
             whileInView="onScreen"
             viewport={{ once: false, amount: 0.1 }}
@@ -576,7 +575,7 @@ export default function Home(_delay) {
         </div>
         <div className="container mx-auto grid md:grid-cols-3 grid-cols-1 gap-14 md:pt-20 pt-16 ">
           <motion.div className="md:p-8 p-4"
-            variants={TextAnimation}
+            variants={width >= '768' && TextAnimation}
             initial="offScreen"
             whileInView="onScreen"
             viewport={{ once: false, amount: 0.1 }}
@@ -614,7 +613,7 @@ export default function Home(_delay) {
             </div>
           </motion.div>
           <motion.div className="md:p-8 p-4"
-          variants={TextAnimation}
+          variants={width >= '768' &&  TextAnimation}
             initial="offScreen"
             whileInView="onScreen"
             viewport={{ once: false, amount: 0.1 }}
@@ -652,7 +651,7 @@ export default function Home(_delay) {
             </div>
           </motion.div>
           <motion.div className="md:p-8 p-4 z-10"
-          variants={TextAnimation}
+          variants={width >= '768' &&  TextAnimation}
             initial="offScreen"
             whileInView="onScreen"
             viewport={{ once: false, amount: 0.1 }}
