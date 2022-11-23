@@ -97,7 +97,7 @@ export default function Home(_delay) {
     <>
       <HeroSection />
       
-      <section className="bg-gradient-to-b from-[#D8E0ED] md:pt-20 pt-10 pb-14 md:px-auto px-6 min-h-[1000px]">
+      <section className="bg-gradient-to-b from-[#D8E0ED] md:pt-20 pt-10 pb-14 md:px-auto px-6 ">
         <div className="w-full group:">
           <Image
             src={Txt_Pic}
@@ -153,7 +153,7 @@ export default function Home(_delay) {
         </div>
       </section>
 
-      <section className="py-20 md:px-auto px-6" id="investment">
+      <section className="md:py-20 pb-20 pt-0 md:px-auto px-6" id="investment">
         <div className="container relative mx-auto grid md:grid-cols-3 grid-cols-1 mt-12">
           <div className="col-span-2">
             <h1 className=" sticky md:top-24 md:text-[3.75rem] text-[2rem] md:leading-[5.25rem] mb-5 leading-[2.75rem] font-bold text-[#171717] md:text-start text-center">
