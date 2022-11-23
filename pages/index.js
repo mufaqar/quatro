@@ -1,50 +1,50 @@
-import Link from "next/link";
-import Image from "next/image";
-import HeroSection from "../components/heroSection";
-import ServiceBox from "../components/serviceBox";
-import Group1 from "../public/images/group1.png";
-import Group2 from "../public/images/group2.png";
-import Group3 from "../public/images/group3.png";
-import Card1 from "../public/images/card1.png";
-import Card2 from "../public/images/card2.png";
-import Card3 from "../public/images/card3.png";
-import Card4 from "../public/images/card4.png";
-import Card5 from "../public/images/card5.png";
-import Card6 from "../public/images/card6.png";
-import card1_mbl from "../public/images/card1_mbl.png";
-import card2_mbl from "../public/images/card2_mbl.png";
-import card3_mbl from "../public/images/card3_mbl.png";
-import card4_mbl from "../public/images/card4_mbl.png";
-import card5_mbl from "../public/images/card5_mbl.png";
-import card6_mbl from "../public/images/card6_mbl.png";
-import Card1Hover from "../public/images/card1Hover.png";
-import Card2Hover from "../public/images/card2Hover.png";
-import Card3Hover from "../public/images/card3Hover.png";
-import Card4Hover from "../public/images/card4Hover.png";
-import Card5Hover from "../public/images/card5Hover.png";
-import Card6Hover from "../public/images/card6Hover.png";
-import BoxBtnMobile from '../public/images/_btn_box.png'
-import BoxBtnDsk from '../public/images/btnBoxDsk.png'
-import BoxBtnDskHover from '../public/images/btnBoxDskHover.png'
-import PostBox from "../components/postBox";
-import Blog1 from "../public/images/blog1.png";
-import Blog2 from "../public/images/blog2.png";
-import Icon1 from "../public/images/icon1.png";
-import Smiley from "../public/images/smiley.png";
-import Flow from "../public/images/flow.png";
-import Txt_Pic from "../public/images/text_image.png";
-import Txt_PicHover from "../public/images/txt_imgHover.png";
-import { motion } from "framer-motion";
+import Link from 'next/link';
+import Image from 'next/image';
+import HeroSection from '../components/heroSection';
+import ServiceBox from '../components/serviceBox';
+import Group1 from '../public/images/group1.png';
+import Group2 from '../public/images/group2.png';
+import Group3 from '../public/images/group3.png';
+import Card1 from '../public/images/card1.png';
+import Card2 from '../public/images/card2.png';
+import Card3 from '../public/images/card3.png';
+import Card4 from '../public/images/card4.png';
+import Card5 from '../public/images/card5.png';
+import Card6 from '../public/images/card6.png';
+import card1_mbl from '../public/images/card1_mbl.png';
+import card2_mbl from '../public/images/card2_mbl.png';
+import card3_mbl from '../public/images/card3_mbl.png';
+import card4_mbl from '../public/images/card4_mbl.png';
+import card5_mbl from '../public/images/card5_mbl.png';
+import card6_mbl from '../public/images/card6_mbl.png';
+import Card1Hover from '../public/images/card1Hover.png';
+import Card2Hover from '../public/images/card2Hover.png';
+import Card3Hover from '../public/images/card3Hover.png';
+import Card4Hover from '../public/images/card4Hover.png';
+import Card5Hover from '../public/images/card5Hover.png';
+import Card6Hover from '../public/images/card6Hover.png';
+import BoxBtnMobile from '../public/images/_btn_box.png';
+import BoxBtnDsk from '../public/images/btnBoxDsk.png';
+import BoxBtnDskHover from '../public/images/btnBoxDskHover.png';
+import PostBox from '../components/postBox';
+import Blog1 from '../public/images/blog1.png';
+import Blog2 from '../public/images/blog2.png';
+import Icon1 from '../public/images/icon1.png';
+import Smiley from '../public/images/smiley.png';
+import Flow from '../public/images/flow.png';
+import Txt_Pic from '../public/images/text_image.png';
+import Txt_PicHover from '../public/images/txt_imgHover.png';
+import { motion } from 'framer-motion';
 import {
   BoxTextAnimation,
   SlideUpAnimation,
   Text,
   TextAnimation,
   ZoomAnimation,
-} from "../animation";
-import { useInView } from "react-hook-inview";
-import { useEffect, useRef, useState } from "react";
-import useWindowDimensions from '../hooks/useWindowDimensions'
+} from '../animation';
+import { useInView } from 'react-hook-inview';
+import { useEffect, useRef, useState } from 'react';
+import useWindowDimensions from '../hooks/useWindowDimensions';
 
 export default function Home(_delay) {
   const [ref, inView] = useInView();
@@ -66,17 +66,17 @@ export default function Home(_delay) {
 
   const Text = {
     onScreen: {
-      y: inView ? "5rem" : "26rem",
+      y: inView ? '5rem' : '26rem',
       // scale: inView ? 1 : 2,
       // x: inView ? "0" : "40rem",
     },
     offScreen: {
-      y: "26rem",
+      y: '26rem',
     },
   };
   const Box = {
     onScreen: {
-      y: box ? "10rem" : "32rem",
+      y: box ? '10rem' : '32rem',
       opacity: box ? 1 : 0,
     },
     offScreen: {
@@ -86,9 +86,9 @@ export default function Home(_delay) {
 
   const ImageSlide = {
     onScreen: {
-      y: inViewMbl ? "-0rem" : "-12rem",
+      y: inViewMbl ? '-0rem' : '-12rem',
       scale: inViewMbl ? 1 : 0.2,
-      x: inViewMbl ? 1 : "7rem",
+      x: inViewMbl ? 1 : '7rem',
       transition: {
         duration: 0.5,
       },
@@ -99,7 +99,7 @@ export default function Home(_delay) {
   return (
     <>
       <HeroSection />
-      
+
       <section className="bg-gradient-to-b from-[#D8E0ED] md:pt-20 pt-10 pb-14 md:px-auto px-6 ">
         <div className="w-full group:">
           <Image
@@ -182,6 +182,7 @@ export default function Home(_delay) {
                 src={Card1}
                 alt="Image Missing"
                 className="object-cover  w-full h-full md:block hidden rounded-[32px] group-hover:hidden"
+                priority
               />
               <Image
                 src={card1_mbl}
@@ -225,6 +226,7 @@ export default function Home(_delay) {
                 src={Card2}
                 alt="Image Missing"
                 className="object-cover  w-full h-full md:block hidden rounded-[32px] group-hover:hidden"
+                priority
               />
               <Image
                 src={card2_mbl}
@@ -267,6 +269,7 @@ export default function Home(_delay) {
                 src={Card3}
                 alt="Image Missing"
                 className="object-cover  w-full h-full md:block hidden rounded-[32px] group-hover:hidden"
+                priority
               />
               <Image
                 src={card3_mbl}
@@ -310,6 +313,7 @@ export default function Home(_delay) {
                 src={Card4}
                 alt="Image Missing"
                 className="object-cover  w-full h-full md:block hidden rounded-[32px] group-hover:hidden"
+                priority
               />
               <Image
                 src={card4_mbl}
@@ -352,6 +356,7 @@ export default function Home(_delay) {
                 src={Card5}
                 alt="Image Missing"
                 className="object-cover  w-full h-full md:block hidden rounded-[32px] group-hover:hidden"
+                priority
               />
               <Image
                 src={card5_mbl}
@@ -395,6 +400,7 @@ export default function Home(_delay) {
                 src={Card6}
                 alt="Image Missing"
                 className="object-cover  w-full h-full md:block hidden rounded-[32px] group-hover:hidden"
+                priority
               />
               <Image
                 src={card6_mbl}
@@ -440,10 +446,14 @@ export default function Home(_delay) {
           viewport={{ once: true }}
         >
           <h1
-            className={` _boxHeading ${width >= '768' ? 'absolute top-1/2 transform -translate-y-1/2' : 'text-[32px] margin-top-0' } text-[2rem]  leading-[2.75rem] font-bold text-[#F9FAFB] text-start ${
+            className={` _boxHeading ${
+              width >= '768'
+                ? 'absolute top-1/2 transform -translate-y-1/2'
+                : 'text-[32px] margin-top-0'
+            } text-[2rem]  leading-[2.75rem] font-bold text-[#F9FAFB] text-start ${
               inView
-                ? "text-white text-[60px]  md:leading-[5.25rem]"
-                : "text-[#5E5E5E] md:text-[120px] md:leading-[120px]"
+                ? 'text-white text-[60px]  md:leading-[5.25rem]'
+                : 'text-[#5E5E5E] md:text-[120px] md:leading-[120px]'
             }`}
           >
             퀀트투자,<br></br>
@@ -451,7 +461,9 @@ export default function Home(_delay) {
           </h1>
         </motion.div>
         <motion.div
-          className={`container mx-auto  gap-14 mt-10 _boxWrapper  ${ inView ? box && "grid" : 'hidden' }`}
+          className={`container mx-auto  gap-14 mt-10 _boxWrapper  ${
+            inView ? box && 'grid' : 'hidden'
+          }`}
           variants={width >= '768' ? Box : ''}
           initial="offScreen"
           animate="onScreen"
@@ -487,7 +499,7 @@ export default function Home(_delay) {
                 {`많은 주문횟수와 성공적인 주문연결을 최우선으로 하며 사용자가 자동매매 서비스를 이용하는데 불편함이 없도록 하고있어요.`}
               </motion.p>
             </div>
-            <div className={` ${inView ? box && "img-container" : ""}`}>
+            <div className={` ${inView ? box && 'img-container' : ''}`}>
               <Image
                 src={Blog1}
                 alt="Image"
@@ -511,7 +523,7 @@ export default function Home(_delay) {
               </motion.h6>
               <motion.h3
                 className="md:text-[2.1rem] text-[1.25rem] md:leading-[2.75rem] font-bold text-white md:mt-9 mt-5"
-                variants={ width >= '768' && BoxTextAnimation}
+                variants={width >= '768' && BoxTextAnimation}
                 initial="offScreen"
                 whileInView="onScreen"
               >
@@ -526,7 +538,7 @@ export default function Home(_delay) {
                 {`퀀트로는 사용자의 데이터를 절대적으로 중요하게 생각하며 그 어떠한 위험에도 노출되지 않도록 최선을 다하고 있어요.`}
               </motion.p>
             </div>
-            <div className={` ${inView ? box && "img-container2" : ""}`}>
+            <div className={` ${inView ? box && 'img-container2' : ''}`}>
               <Image
                 src={Blog2}
                 alt="Image"
@@ -535,17 +547,19 @@ export default function Home(_delay) {
             </div>
           </motion.div>
         </motion.div>
-        <div className="min-h-[5px] w-full absolute bg-transparent left-0 top-5/6" ref={ width >= '768' ? ref : refEx} ></div>
+        <div
+          className="min-h-[5px] w-full absolute bg-transparent left-0 top-5/6"
+          ref={width >= '768' ? ref : refEx}
+        ></div>
       </section>
 
       <section className="py-20 md:px-auto px-6 bg-[#F9FAFB] relative  bg-contain bg-no-repeat bg-right overflow-hidden">
         <div className="container mx-auto text-center ">
-          
-            <motion.h3
+          <motion.h3
             className="md:text-[3.75rem] z-20 relative text-[1.5rem] md:leading-[5.25rem] leading-[1.875rem] font-light text-center text-[#171717]"
             variants={width >= '768' ? TextAnimation : ''}
             initial={'offScreen'}
-            whileInView={ 'onScreen'}
+            whileInView={'onScreen'}
             viewport={{ once: false, amount: 0.1 }}
             transition={{ delay: 0.4 }}
           >
@@ -562,7 +576,7 @@ export default function Home(_delay) {
             퀀트로, 간편하게 시작해보세요.
           </motion.h3>
           <motion.button
-          className="relative z-20"
+            className="relative z-20"
             variants={width >= '768' ? TextAnimation : ''}
             initial="offScreen"
             whileInView="onScreen"
@@ -576,21 +590,41 @@ export default function Home(_delay) {
               이용권 등록 바로가기
           </Link> */}
 
-          <Link href="/">
-            <figure className="group">
-              <div className="md:hidden"><Image src={BoxBtnMobile} alt="btn" width={196} height={52}></Image></div>
-              <div className="hidden md:block">
-              <div className="group-hover:hidden"><Image src={BoxBtnDsk} alt="btn" width={196} height={52}></Image></div>
-              <div className="hidden group-hover:block"><Image src={BoxBtnDskHover} alt="btn" width={196} height={52}></Image></div>
-              </div>
-            </figure>
-            
-          </Link>
-
+            <Link href="/">
+              <figure className="group">
+                <div className="md:hidden">
+                  <Image
+                    src={BoxBtnMobile}
+                    alt="btn"
+                    width={196}
+                    height={52}
+                  ></Image>
+                </div>
+                <div className="hidden md:block">
+                  <div className="group-hover:hidden">
+                    <Image
+                      src={BoxBtnDsk}
+                      alt="btn"
+                      width={196}
+                      height={52}
+                    ></Image>
+                  </div>
+                  <div className="hidden group-hover:block">
+                    <Image
+                      src={BoxBtnDskHover}
+                      alt="btn"
+                      width={196}
+                      height={52}
+                    ></Image>
+                  </div>
+                </div>
+              </figure>
+            </Link>
           </motion.button>
         </div>
         <div className="container mx-auto grid md:grid-cols-3 grid-cols-1 gap-14 md:pt-20 pt-16 ">
-          <motion.div className="md:p-8 p-4"
+          <motion.div
+            className="md:p-8 p-4"
             variants={width >= '768' && TextAnimation}
             initial="offScreen"
             whileInView="onScreen"
@@ -628,8 +662,9 @@ export default function Home(_delay) {
               </motion.p>
             </div>
           </motion.div>
-          <motion.div className="md:p-8 p-4"
-          variants={width >= '768' &&  TextAnimation}
+          <motion.div
+            className="md:p-8 p-4"
+            variants={width >= '768' && TextAnimation}
             initial="offScreen"
             whileInView="onScreen"
             viewport={{ once: false, amount: 0.1 }}
@@ -666,8 +701,9 @@ export default function Home(_delay) {
               </motion.p>
             </div>
           </motion.div>
-          <motion.div className="md:p-8 p-4 z-10"
-          variants={width >= '768' &&  TextAnimation}
+          <motion.div
+            className="md:p-8 p-4 z-10"
+            variants={width >= '768' && TextAnimation}
             initial="offScreen"
             whileInView="onScreen"
             viewport={{ once: false, amount: 0.1 }}
