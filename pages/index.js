@@ -730,7 +730,7 @@ export default function Home(_delay) {
                 <h3 className="md:text-[2rem] md:leading-[2.375rem] font-bold text-[#171717] md:mt-10">
                   이용요금
                 </h3>
-                <p className="md:text-[1rem] md:leading-[1.18rem] font-normal text-[#333333] mt-5 md:block hidden">
+                <p className="md:text-[1rem] md:leading-[1.18rem] font-normal text-[#333333] mt-5 md:block hidden md:min-h-[38px]">
                   기본서비스는 무료로 제공되어요.
                 </p>
               </div>
@@ -766,7 +766,7 @@ export default function Home(_delay) {
                 <h3 className="md:text-[2rem] md:leading-[2.375rem] font-bold text-[#171717] md:mt-10">
                   이용안내
                 </h3>
-                <p className="md:text-[1rem] md:leading-[1.18rem] font-normal text-[#333333] mt-5 md:block hidden">
+                <p className="md:text-[1rem] md:leading-[1.18rem] font-normal text-[#333333] mt-5 md:block hidden md:min-h-[38px]">
                   궁금해하실 모든 내용을 담아봤어요.
                 </p>
               </div>
@@ -802,7 +802,7 @@ export default function Home(_delay) {
                 <h3 className="md:text-[2rem] md:leading-[2.375rem] font-bold text-[#171717] md:mt-10">
                   고객센터
                 </h3>
-                <p className="md:text-[1rem] md:leading-[1.18rem] font-normal text-[#333333] mt-5 md:block hidden">
+                <p className="md:text-[1rem] md:leading-[1.18rem] font-normal text-[#333333] mt-5 md:block hidden md:min-h-[38px]">
                   어려운 점이 있으신가요? 퀀트로 고객센터로 문의주세요.
                 </p>
               </div>
