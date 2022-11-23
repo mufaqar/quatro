@@ -23,7 +23,9 @@ import Card3Hover from "../public/images/card3Hover.png";
 import Card4Hover from "../public/images/card4Hover.png";
 import Card5Hover from "../public/images/card5Hover.png";
 import Card6Hover from "../public/images/card6Hover.png";
-import BoxBtn from '../public/images/_btn_box.png'
+import BoxBtnMobile from '../public/images/_btn_box.png'
+import BoxBtnDsk from '../public/images/btnBoxDsk.png'
+import BoxBtnDskHover from '../public/images/btnBoxDskHover.png'
 import PostBox from "../components/postBox";
 import Blog1 from "../public/images/blog1.png";
 import Blog2 from "../public/images/blog2.png";
@@ -574,7 +576,14 @@ export default function Home(_delay) {
           </Link> */}
 
           <Link href="/">
-            <Image src={BoxBtn} alt="btn" width={196} height={52}></Image>
+            <figure className="group">
+              <div className="md:hidden"><Image src={BoxBtnMobile} alt="btn" width={196} height={52}></Image></div>
+              <div className="hidden md:block">
+              <div className="group-hover:hidden"><Image src={BoxBtnDsk} alt="btn" width={196} height={52}></Image></div>
+              <div className="hidden group-hover:block"><Image src={BoxBtnDskHover} alt="btn" width={196} height={52}></Image></div>
+              </div>
+            </figure>
+            
           </Link>
 
           </motion.button>
