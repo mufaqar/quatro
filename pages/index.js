@@ -611,6 +611,8 @@ export default function Home(_delay) {
                     alt="btn"
                     width={196}
                     height={52}
+                    placeholder="blur"
+                    priority="true"
                   ></Image>
                 </div>
                 <div className="hidden md:block">
@@ -620,6 +622,8 @@ export default function Home(_delay) {
                       alt="btn"
                       width={196}
                       height={52}
+                      placeholder="blur"
+                      priority="true"
                     ></Image>
                   </div>
                   <div className="hidden group-hover:block">
@@ -628,6 +632,8 @@ export default function Home(_delay) {
                       alt="btn"
                       width={196}
                       height={52}
+                      placeholder="blur"
+                      priority="true"
                     ></Image>
                   </div>
                 </div>

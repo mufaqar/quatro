@@ -52,16 +52,22 @@ export default function HeroSection() {
                     src={Btn_yellow}
                     alt="Image"
                     className="md:group-hover:hidden md:block hidden mx-auto"
+                    placeholder="blur"
+                    priority="true"
                   />
                   <Image
                     src={Btn_yellowHover}
                     alt="Image"
                     className="md:group-hover:block hidden mx-auto"
+                    placeholder="blur"
+                    priority="true"
                   />
                   <Image
                     src={Btn_yellowMbl}
                     alt="Image"
                     className="md:hidden mx-auto"
+                    placeholder="blur"
+                    priority="true"
                   />
                 </Link>
               </motion.button>
@@ -77,16 +83,22 @@ export default function HeroSection() {
                     src={Btn_transp}
                     alt="Image"
                     className="md:group-hover:hidden md:block hidden mx-auto"
+                    placeholder="blur"
+                    priority="true"
                   />
                   <Image
                     src={Btn_transpHover}
                     alt="Image"
                     className="md:group-hover:block hidden mx-auto"
+                    placeholder="blur"
+                    priority="true"
                   />
                   <Image
                     src={Btn_transMbl}
                     alt="Image"
                     className="md:hidden mx-auto"
+                    placeholder="blur"
+                    priority="true"
                   />
                 </Link>
               </motion.button>
